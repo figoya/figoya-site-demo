@@ -1,5 +1,5 @@
-/* The palette. Named by role, never by value: the day the brand changes colour,
-   only the values change. Contrast duties will be computed from these. */
+/* The palette. Derived from source/style.md by figoya-site: change the values there
+   and run apply-copy. Named by role, never by value (CSS-11). */
 :root {
   --accent: #76ac41;           /* headings, links, buttons, rules on light ground */
   --accent-on-dark: #c6d768;   /* the accent's lighter cut for text and focus rings on dark ground */
