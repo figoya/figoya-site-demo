@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Swatches — Figoya - Low CO2 Digital</title>
+<style>
+  html { font-size: 0.625em; font-family: "Arial", "Helvetica", sans-serif; }
+  body { margin: 0; padding: 2rem; font-size: 1.6rem; color: #222; background: #f4f4f4; }
+  h1 { font-size: 2.8rem; margin: 0 0 0.5rem; }
+  h2 { font-size: 2rem; margin: 3rem 0 1rem; }
+  p.note { color: #555; max-width: 70rem; }
+  ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 1.2rem; grid-template-columns: repeat(auto-fill, minmax(26rem, 1fr)); }
+  .swatches li { padding: 1.4rem; border-radius: 0.4rem; min-height: 11rem; box-shadow: 0 0 0 1px rgba(0,0,0,0.12); color: #fff; text-shadow: 0 0 3px rgba(0,0,0,0.9), 0 0 1px rgba(0,0,0,0.9); }
+  .swatches .name { font-weight: bold; font-family: monospace; font-size: 1.5rem; }
+  .swatches .value, .swatches .kinds { font-family: monospace; font-size: 1.3rem; opacity: 0.95; }
+  .swatches .role { margin-top: 0.8rem; font-size: 1.3rem; }
+  .pairs li { padding: 1.4rem; border-radius: 0.4rem; box-shadow: 0 0 0 1px rgba(0,0,0,0.12); }
+  .pairs li.fail { outline: 0.3rem solid #d33; outline-offset: -0.3rem; }
+  .pairs .sample { min-height: 4.4rem; display: flex; align-items: center; }
+  .pairs .rule { display: block; width: 100%; height: 0; border-top: 0.3rem solid; }
+  .pairs .meta { margin-top: 1rem; background: rgba(255,255,255,0.92); color: #222; font-size: 1.3rem; padding: 0.6rem 0.8rem; border-radius: 0.3rem; display: flex; flex-wrap: wrap; gap: 0.4rem 1.2rem; }
+  .pairs .pair { font-family: monospace; }
+  .pairs .ratio { font-weight: bold; }
+  .pairs li.fail .ratio { color: #b00; }
+  .pairs .fix i { display: inline-block; width: 1.2rem; height: 1.2rem; vertical-align: middle; border: 1px solid #888; margin-left: 0.3rem; }
+  .scale { display: block; }
+  .scale li { display: flex; flex-direction: column; gap: 0.2rem; margin-bottom: 1.4rem; }
+  .scale .label { font-family: monospace; font-size: 1.2rem; color: #555; }
+  .summary { font-weight: bold; }
+  .summary.fail { color: #b00; }
+</style>
+</head>
+<body>
+<h1>Swatches — Figoya - Low CO2 Digital</h1>
+<p class="note">Derived from <code>source/style.md</code>. Every colour, then every pairing the style file declares, with the contrast it gets and the duty it owes (A11Y-7: body text 4.5:1, large text and non-text 3:1). Change the values in <code>style.md</code>, run <code>figoya-site apply-copy</code>, then <code>figoya-site swatches</code> again.</p>
+<p class="summary fail">13 pairings, 4 failing.</p>
+
+<h2>Palette</h2>
+<ul class="swatches">
+      <li style="background: #76ac41">
+        <div class="name">--accent</div>
+        <div class="value">#76ac41</div>
+        <div class="kinds">ground, text, heading, rule</div>
+        <div class="role">headings, links, buttons, rules on light ground</div>
+      </li>
+      <li style="background: #c6d768">
+        <div class="name">--accent-on-dark</div>
+        <div class="value">#c6d768</div>
+        <div class="kinds">text, rule</div>
+        <div class="role">the accent's lighter cut for text and focus rings on dark ground</div>
+      </li>
+      <li style="background: #fff">
+        <div class="name">--ground</div>
+        <div class="value">#fff</div>
+        <div class="kinds">ground, text</div>
+        <div class="role">the page</div>
+      </li>
+      <li style="background: #252625">
+        <div class="name">--ground-dark</div>
+        <div class="value">#252625</div>
+        <div class="kinds">ground</div>
+        <div class="role">hero, header, footer, dark bands</div>
+      </li>
+      <li style="background: #333">
+        <div class="name">--band</div>
+        <div class="value">#333</div>
+        <div class="kinds">ground, text</div>
+        <div class="role">the lighter dark band (family D)</div>
+      </li>
+      <li style="background: #1d1d1b">
+        <div class="name">--text</div>
+        <div class="value">#1d1d1b</div>
+        <div class="kinds">text</div>
+        <div class="role">body text on light ground</div>
+      </li>
+      <li style="background: #ddd">
+        <div class="name">--text-on-dark</div>
+        <div class="value">#ddd</div>
+        <div class="kinds">text</div>
+        <div class="role">body text on dark ground</div>
+      </li>
+      <li style="background: #fff">
+        <div class="name">--text-on-dark-strong</div>
+        <div class="value">#fff</div>
+        <div class="kinds">text, heading</div>
+        <div class="role">hero text and links on dark ground</div>
+      </li>
+      <li style="background: #ccc">
+        <div class="name">--rule</div>
+        <div class="value">#ccc</div>
+        <div class="kinds">rule, text</div>
+        <div class="role">hairlines, form borders, focus rings on light ground</div>
+      </li>
+      <li style="background: #999">
+        <div class="name">--rule-faint</div>
+        <div class="value">#999</div>
+        <div class="kinds">rule</div>
+        <div class="role">hairlines that should recede</div>
+      </li>
+</ul>
+
+<h2>Pairings</h2>
+<ul class="pairs">
+      <li class="fail" style="background: #fff; color: #76ac41">
+        <div class="sample"><span style="font-size: 1.8rem">Body text sits here</span></div>
+        <div class="meta">
+          <span class="pair">--accent on --ground</span>
+          <span class="kind">text</span>
+          <span class="ratio">2.71:1 owes 4.5:1</span>
+          <span class="fix">nearest passing shade <code>#588030</code> <i style="background: #588030"></i></span>
+        </div>
+      </li>
+      <li class="pass" style="background: #252625; color: #c6d768">
+        <div class="sample"><span style="font-size: 1.8rem">Body text sits here</span></div>
+        <div class="meta">
+          <span class="pair">--accent-on-dark on --ground-dark</span>
+          <span class="kind">text</span>
+          <span class="ratio">9.63:1 meets 4.5:1</span>
+          
+        </div>
+      </li>
+      <li class="pass" style="background: #333; color: #c6d768">
+        <div class="sample"><span style="font-size: 1.8rem">Body text sits here</span></div>
+        <div class="meta">
+          <span class="pair">--accent-on-dark on --band</span>
+          <span class="kind">text</span>
+          <span class="ratio">8.01:1 meets 4.5:1</span>
+          
+        </div>
+      </li>
+      <li class="fail" style="background: #76ac41; color: #fff">
+        <div class="sample"><span style="font-size: 1.8rem">Body text sits here</span></div>
+        <div class="meta">
+          <span class="pair">--ground on --accent</span>
+          <span class="kind">text</span>
+          <span class="ratio">2.71:1 owes 4.5:1</span>
+          <span class="fix">nearest passing shade <code>#333333</code> <i style="background: #333333"></i></span>
+        </div>
+      </li>
+      <li class="pass" style="background: #fff; color: #333">
+        <div class="sample"><span style="font-size: 1.8rem">Body text sits here</span></div>
+        <div class="meta">
+          <span class="pair">--band on --ground</span>
+          <span class="kind">text</span>
+          <span class="ratio">12.63:1 meets 4.5:1</span>
+          
+        </div>
+      </li>
+      <li class="pass" style="background: #fff; color: #1d1d1b">
+        <div class="sample"><span style="font-size: 1.8rem">Body text sits here</span></div>
+        <div class="meta">
+          <span class="pair">--text on --ground</span>
+          <span class="kind">text</span>
+          <span class="ratio">16.88:1 meets 4.5:1</span>
+          
+        </div>
+      </li>
+      <li class="pass" style="background: #252625; color: #ddd">
+        <div class="sample"><span style="font-size: 1.8rem">Body text sits here</span></div>
+        <div class="meta">
+          <span class="pair">--text-on-dark on --ground-dark</span>
+          <span class="kind">text</span>
+          <span class="ratio">11.18:1 meets 4.5:1</span>
+          
+        </div>
+      </li>
+      <li class="pass" style="background: #333; color: #ddd">
+        <div class="sample"><span style="font-size: 1.8rem">Body text sits here</span></div>
+        <div class="meta">
+          <span class="pair">--text-on-dark on --band</span>
+          <span class="kind">text</span>
+          <span class="ratio">9.3:1 meets 4.5:1</span>
+          
+        </div>
+      </li>
+      <li class="pass" style="background: #252625; color: #fff">
+        <div class="sample"><span style="font-size: 1.8rem">Body text sits here</span></div>
+        <div class="meta">
+          <span class="pair">--text-on-dark-strong on --ground-dark</span>
+          <span class="kind">text</span>
+          <span class="ratio">15.19:1 meets 4.5:1</span>
+          
+        </div>
+      </li>
+      <li class="fail" style="background: #fff; color: #ccc">
+        <div class="sample"><span class="rule" style="border-color: #ccc"></span></div>
+        <div class="meta">
+          <span class="pair">--rule on --ground</span>
+          <span class="kind">rule</span>
+          <span class="ratio">1.61:1 owes 3:1</span>
+          <span class="fix">nearest passing shade <code>#949494</code> <i style="background: #949494"></i></span>
+        </div>
+      </li>
+      <li class="pass" style="background: #333; color: #ccc">
+        <div class="sample"><span style="font-size: 1.8rem">Body text sits here</span></div>
+        <div class="meta">
+          <span class="pair">--rule on --band</span>
+          <span class="kind">text</span>
+          <span class="ratio">7.87:1 meets 4.5:1</span>
+          
+        </div>
+      </li>
+      <li class="fail" style="background: #fff; color: #999">
+        <div class="sample"><span class="rule" style="border-color: #999"></span></div>
+        <div class="meta">
+          <span class="pair">--rule-faint on --ground</span>
+          <span class="kind">rule</span>
+          <span class="ratio">2.85:1 owes 3:1</span>
+          <span class="fix">nearest passing shade <code>#949494</code> <i style="background: #949494"></i></span>
+        </div>
+      </li>
+      <li class="pass" style="background: #333; color: #999">
+        <div class="sample"><span class="rule" style="border-color: #999"></span></div>
+        <div class="meta">
+          <span class="pair">--rule-faint on --band</span>
+          <span class="kind">rule</span>
+          <span class="ratio">4.43:1 meets 3:1</span>
+          
+        </div>
+      </li>
+</ul>
+
+<h2>Type</h2>
+<p class="note">&quot;Arial&quot;, &quot;Helvetica&quot;, sans-serif; 1rem is 10px.</p>
+<ul class="scale">
+      <li><span class="label">heading 2.5rem = 25px</span>
+        <span style="font-size: 2.5rem; font-weight: bold">The quick brown fox jumps over the lazy dog</span></li>
+      <li><span class="label">body 1.8rem = 18px</span>
+        <span style="font-size: 1.8rem">The quick brown fox jumps over the lazy dog</span></li>
+</ul>
+</body>
+</html>
