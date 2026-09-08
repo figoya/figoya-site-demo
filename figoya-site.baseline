@@ -2,45 +2,12 @@
 # One per line: rule <tab> file <tab> message. `figoya-site check` fails on anything
 # not listed here and reports lines that no longer apply. Regenerate with
 # `figoya-site check --update-baseline`; remove lines as you fix things.
-SG-1	about-us/index.html	section class "s person name-1": expected exactly "s <name>" (modifiers belong on components)
-SG-4	about-us/index.html	component "c person name-1 heading" sits directly in section "person" instead of in a row
-SG-9	about-us/index.html	component "c person name-1 heading": the role must come third (c <section> <role> <modifiers>)
-SG-9	about-us/index.html	component "c person name-1 text": the role must come third (c <section> <role> <modifiers>)
-SG-9	about-us/index.html	component "c person name-1 actions": the role must come third (c <section> <role> <modifiers>)
-SG-1	about-us/index.html	section class "s person name-2": expected exactly "s <name>" (modifiers belong on components)
-SG-4	about-us/index.html	component "c person name-2 heading" sits directly in section "person" instead of in a row
-SG-9	about-us/index.html	component "c person name-2 heading": the role must come third (c <section> <role> <modifiers>)
-SG-9	about-us/index.html	component "c person name-2 text": the role must come third (c <section> <role> <modifiers>)
-SG-9	about-us/index.html	component "c person name-2 actions": the role must come third (c <section> <role> <modifiers>)
-SG-1	blog/index.html	section class "s blog-summary one": expected exactly "s <name>" (modifiers belong on components)
-SG-4	blog/index.html	component "c blog-summary one heading" sits directly in section "blog-summary" instead of in a row
-SG-9	blog/index.html	component "c blog-summary one heading": the role must come third (c <section> <role> <modifiers>)
-SG-9	blog/index.html	component "c blog-summary one text": the role must come third (c <section> <role> <modifiers>)
-SG-9	blog/index.html	component "c blog-summary one actions": the role must come third (c <section> <role> <modifiers>)
-SG-1	blog/index.html	section class "s blog-summary two": expected exactly "s <name>" (modifiers belong on components)
-SG-4	blog/index.html	component "c blog-summary two heading" sits directly in section "blog-summary" instead of in a row
-SG-9	blog/index.html	component "c blog-summary two heading": the role must come third (c <section> <role> <modifiers>)
-SG-9	blog/index.html	component "c blog-summary two text": the role must come third (c <section> <role> <modifiers>)
-SG-9	blog/index.html	component "c blog-summary two actions": the role must come third (c <section> <role> <modifiers>)
-SG-1	blog/index.html	section class "s blog-summary three": expected exactly "s <name>" (modifiers belong on components)
-SG-4	blog/index.html	component "c blog-summary three heading" sits directly in section "blog-summary" instead of in a row
-SG-9	blog/index.html	component "c blog-summary three heading": the role must come third (c <section> <role> <modifiers>)
-SG-9	blog/index.html	component "c blog-summary three text": the role must come third (c <section> <role> <modifiers>)
-SG-9	blog/index.html	component "c blog-summary three actions": the role must come third (c <section> <role> <modifiers>)
 A11Y-5	esg/index.html	<img src="/_/img/figoya-logo-no-text-bw-1.svg"> has no alt attribute
-HTML-5	how-we-work/index.html	the content row wraps an extra <div>; sections should be its direct children
 HTML-2	privacy-policy/index.html	body class is "page privacy", expected "page privacy-policy"
 HTML-3	privacy-policy/index.html	the <script>0;</script> guard is missing right after <body>
 HTML-4	privacy-policy/index.html	body should contain one layout <div> (found main)
 HTML-5	privacy-policy/index.html	main has 1 children (div); expected exactly two <div> rows
 HTML-10	privacy-policy/index.html	7 <h1> elements; expected exactly one
-SG-5	about-us/index.html	section "person" appears twice on this page (names are unique across the site; only the hero may repeat)
-SG-5	blog/index.html	section "blog-summary" appears twice on this page (names are unique across the site; only the hero may repeat)
-SG-5	esg/index.html	section "esg-targets" appears twice on this page (names are unique across the site; only the hero may repeat)
-SP-2	_/css/section/by-email.css	".s.by-email .c.user-input" descends from .s.by-email to a component; write .c.by-email.<role> instead
 MQ-4	_/css/section/how-we-can-help.css	min-width 950px is not on the ladder (400/500/600/700/800/900/1040)
-SP-2	_/css/section/shared.css	".s.how-much .c.actions" descends from .s.how-much to a component; write .c.how-much.<role> instead
 FAM-2	_/css/section/shared.css	section "transparency" is listed in two families ("Section style C" and "Section style D")
-SG-3	_/css/site.css	"h2.c.how-we-can-help" qualifies a grammar class with an element (h2.c.how-we-can-help)
-CSS-9	_/css/site.css	color: white is a colour literal; use a palette custom property
 CSS-8	_/css/site.css	overflow-x: hidden on "body > div"; it lives on body only

@@ -8,6 +8,7 @@
   --band: #333;              /* the lighter dark band (family D) */
   --text: #1d1d1b;           /* body text on light ground */
   --text-on-dark: #ddd;      /* body text on dark ground */
+  --text-on-dark-strong: #fff; /* hero text and links on dark ground */
   --rule: #ccc;              /* hairlines, form borders, focus rings on light ground */
   --rule-faint: #999;        /* hairlines that should recede */
 }
@@ -40,7 +41,7 @@
     text-transform: uppercase;
     margin: 0;
   }
-  h2.c.how-we-can-help{color: var(--accent);}
+  .c.how-we-can-help.heading{color: var(--accent);}
   h1 {
     font-size: 5rem;
     color: var(--text-on-dark);
@@ -105,7 +106,7 @@
     transition: margin 300ms, padding 300ms;
   }
   a.more.alt, a.contact.alt, button[type="submit"].alt {
-    color: white;
+    color: var(--text-on-dark-strong);
   }
   a.contact:hover, a.more:hover, button[type="submit"]:hover {
     padding: 1.3rem 3.3rem;
@@ -246,7 +247,7 @@
 @media only screen {
 
   .page main > div:nth-child(1) > .s:first-of-type a {
-    color: white;
+    color: var(--text-on-dark-strong);
   }
   .page main > div:nth-child(1) > .s:first-of-type a:hover {
     text-decoration: none;
@@ -265,7 +266,7 @@
     font-weight: bold;
     font-size: 2rem;
     margin:  0 0 1rem 0;
-    color: white;
+    color: var(--text-on-dark-strong);
   }
   .page main > div:nth-child(1) > .s:first-of-type .c.text p span{
     font-family: "Arial Black", "Arial", "Helvetica", sans-serif;
@@ -274,11 +275,11 @@
     color: var(--accent-on-dark);
   }
   .page main > div:nth-child(1) > .s:first-of-type .c.text p a {
-    color: white;
+    color: var(--text-on-dark-strong);
   }
   .page main > div:nth-child(1) > .s:first-of-type .c.text p:nth-child(odd),
   .page main > div:nth-child(1) > .s:first-of-type .c.text p:nth-child(odd) a {
-    color: white;
+    color: var(--text-on-dark-strong);
   }
   .page main > div:nth-child(1) > .s:first-of-type .c.text p:nth-child(odd),
   .page main > div:nth-child(1) > .s:first-of-type .c.text p:nth-child(odd) {
