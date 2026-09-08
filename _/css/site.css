@@ -1,16 +1,16 @@
 /* The palette. Named by role, never by value: the day the brand changes colour,
    only the values change. Contrast duties will be computed from these. */
 :root {
-  --accent: #76ac41;         /* headings, links, buttons, rules on light ground */
-  --accent-on-dark: #c6d768; /* the accent's lighter cut for text and focus rings on dark ground */
-  --ground: #fff;            /* the page */
-  --ground-dark: #252625;    /* hero, header, footer, dark bands */
-  --band: #333;              /* the lighter dark band (family D) */
-  --text: #1d1d1b;           /* body text on light ground */
-  --text-on-dark: #ddd;      /* body text on dark ground */
+  --accent: #76ac41;           /* headings, links, buttons, rules on light ground */
+  --accent-on-dark: #c6d768;   /* the accent's lighter cut for text and focus rings on dark ground */
+  --ground: #fff;              /* the page */
+  --ground-dark: #252625;      /* hero, header, footer, dark bands */
+  --band: #333;                /* the lighter dark band (family D) */
+  --text: #1d1d1b;             /* body text on light ground */
+  --text-on-dark: #ddd;        /* body text on dark ground */
   --text-on-dark-strong: #fff; /* hero text and links on dark ground */
-  --rule: #ccc;              /* hairlines, form borders, focus rings on light ground */
-  --rule-faint: #999;        /* hairlines that should recede */
+  --rule: #ccc;                /* hairlines, form borders, focus rings on light ground */
+  --rule-faint: #999;          /* hairlines that should recede */
 }
 
 @media screen and (prefers-reduced-motion: reduce) {
