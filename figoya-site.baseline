@@ -9,5 +9,4 @@ HTML-4	privacy-policy/index.html	body should contain one layout <div> (found mai
 HTML-5	privacy-policy/index.html	main has 1 children (div); expected exactly two <div> rows
 HTML-10	privacy-policy/index.html	7 <h1> elements; expected exactly one
 MQ-4	_/css/section/how-we-can-help.css	min-width 950px is not on the ladder (400/500/600/700/800/900/1040)
-FAM-2	_/css/section/shared.css	section "transparency" is listed in two families ("Section style C" and "Section style D")
 CSS-8	_/css/site.css	overflow-x: hidden on "body > div"; it lives on body only

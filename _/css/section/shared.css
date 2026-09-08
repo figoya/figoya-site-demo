@@ -289,7 +289,6 @@
 
 
 @media only screen {
-  .s.transparency,
   .s.agile,
   .s.accountability,
   .s.did-you-know {
@@ -306,28 +305,24 @@
 
   
 
-  .s.transparency > div:nth-child(1),
   .s.agile > div:nth-child(1),
   .s.accountability > div:nth-child(1),
   .s.did-you-know > div:nth-child(1) {
     margin-bottom: 3rem;
   }
 
-  .c.transparency h2,
   .c.agile h2,
   .c.accountability h2,
   .c.did-you-know h2 {
     color: var(--accent);
   }
 
-  .c.transparency.text p,
   .c.agile.text p,
   .c.accountability.text p {
     font-size: 2rem;
     margin-top: 0;
   }
 
-  .c.transparency.text.one p:first-child,
   .c.agile.text.one p:first-child,
   .c.accountability.one p:first-child  {
     font-weight: normal;
@@ -338,13 +333,11 @@
     padding:1.8rem 0rem 1.8rem 0rem;
     line-height:3.4rem;
   }
-  .c.transparency.graphic,
   .c.agile.graphic,
   .c.accountability.graphic {
     padding-top: 5rem;
   }
 
-  .c.transparency.graphic img,
   .c.agile.graphic img,
   .c.accountability.graphic img {
     transform: rotate(18deg);
@@ -365,7 +358,6 @@
     margin-top:8rem;
   }
 
-  .c.transparency.graphic img,
   .c.agile.graphic img,
   .c.accountability.graphic img {
     width: 50%;
