@@ -76,7 +76,7 @@
 @media only screen and (min-width: 800px) {
 }
 
-@media only screen and (min-width: 950px) {
+@media only screen and (min-width: 1040px) {
   .c.how-we-can-help.items li {
     flex-basis: 25%;
   }
