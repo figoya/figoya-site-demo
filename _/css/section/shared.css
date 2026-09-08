@@ -12,7 +12,7 @@
   .s.build{
     position: relative;
     z-index: 1;
-    color: #1d1d1b;
+    color: var(--text);
   }
   .s.how-much > div:nth-child(1),
   .s.green-web-apps > div:nth-child(1),
@@ -24,7 +24,7 @@
   .c.green-web-apps h2,
   .c.audit.heading h2,
   .c.build h2{
-    color: #76ac41;
+    color: var(--accent);
   }
   .c.how-much.text p,
   .c.green-web-apps.text p,
@@ -38,10 +38,10 @@
   .c.audit.text p:first-child,
   .c.build.text p:first-child {
     font-weight: normal;
-    color:#76ac41;
+    color:var(--accent);
     font-size: 2.5rem;
-    border-top:solid 0.3rem #76ac41;
-    border-bottom:solid 0.3rem #76ac41;
+    border-top:solid 0.3rem var(--accent);
+    border-bottom:solid 0.3rem var(--accent);
     padding:1.8rem 0rem 1.8rem 0rem;
     line-height:3.4rem;
   }
@@ -149,10 +149,10 @@
   .s.teach {
     position: relative;
     z-index: 1;
-    background: #252625;
+    background: var(--ground-dark);
     padding: 4rem;
     margin: 0 -4rem 0 -4rem;
-    color: #fff;
+    color: var(--ground);
   }
   .s.how > div:nth-child(1),
   .s.how-we-help > div:nth-child(1),
@@ -164,7 +164,7 @@
   .c.how-we-help.heading h2,
   .c.fix.heading h2,
   .c.teach.heading h2 {
-    color: #76ac41;
+    color: var(--accent);
   }
   .c.how.text p,
   .c.how-we-help.text p,
@@ -178,10 +178,10 @@
   .c.fix.text p:first-child,
   .c.teach.text p:first-child{
     font-weight: normal;
-    color:#76ac41;
+    color:var(--accent);
     font-size: 2.5rem;
-    border-top:solid 0.3rem #76ac41;
-    border-bottom:solid 0.3rem #76ac41;
+    border-top:solid 0.3rem var(--accent);
+    border-bottom:solid 0.3rem var(--accent);
     padding:1.8rem 0rem 1.8rem 0rem;
     line-height:3.4rem;
   }
@@ -276,7 +276,7 @@
   .s.teach {
     padding: 10rem 46rem;
     margin: 0 -46rem 0 -46rem;
-    background:#252625;
+    background:var(--ground-dark);
   }
 }
 
@@ -295,7 +295,7 @@
   .s.did-you-know {
     position: relative;
     z-index: 1;
-    color: #1d1d1b;
+    color: var(--text);
   }
 
   .s.agile,
@@ -317,7 +317,7 @@
   .c.agile h2,
   .c.accountability h2,
   .c.did-you-know h2 {
-    color: #76ac41;
+    color: var(--accent);
   }
 
   .c.transparency.text p,
@@ -331,10 +331,10 @@
   .c.agile.text.one p:first-child,
   .c.accountability.one p:first-child  {
     font-weight: normal;
-    color:#76ac41;
+    color:var(--accent);
     font-size: 2.5rem;
-    border-top:solid 0.3rem #76ac41;
-    border-bottom:solid 0.3rem #76ac41;
+    border-top:solid 0.3rem var(--accent);
+    border-bottom:solid 0.3rem var(--accent);
     padding:1.8rem 0rem 1.8rem 0rem;
     line-height:3.4rem;
   }
@@ -418,10 +418,10 @@
   .s.transparency {  
     position: relative;
     z-index: 1;
-    background: #333;
+    background: var(--band);
     padding: 4rem;
     margin: 0 -4rem 0 -4rem;
-    color: #ddd;
+    color: var(--text-on-dark);
   }
 
   .s.by-post > div:nth-child(1),
@@ -431,7 +431,7 @@
 
   .c.by-post.heading h2,
   .c.transparency.heading h2{
-    color: #76ac41;
+    color: var(--accent);
   }
 
   .c.by-post.text p,
@@ -443,10 +443,10 @@
   .c.by-post.text.one p:first-child,
   .c.transparency.text.one p:first-child {
     font-weight: normal;
-    color:#76ac41;
+    color:var(--accent);
     font-size: 2.5rem;
-    border-top:solid 0.3rem #76ac41;
-    border-bottom:solid 0.3rem #76ac41;
+    border-top:solid 0.3rem var(--accent);
+    border-bottom:solid 0.3rem var(--accent);
     padding:1.8rem 0rem 1.8rem 0rem;
     line-height:3.4rem;
   }

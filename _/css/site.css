@@ -1,3 +1,17 @@
+/* The palette. Named by role, never by value: the day the brand changes colour,
+   only the values change. Contrast duties will be computed from these. */
+:root {
+  --accent: #76ac41;         /* headings, links, buttons, rules on light ground */
+  --accent-on-dark: #c6d768; /* the accent's lighter cut for text and focus rings on dark ground */
+  --ground: #fff;            /* the page */
+  --ground-dark: #252625;    /* hero, header, footer, dark bands */
+  --band: #333;              /* the lighter dark band (family D) */
+  --text: #1d1d1b;           /* body text on light ground */
+  --text-on-dark: #ddd;      /* body text on dark ground */
+  --rule: #ccc;              /* hairlines, form borders, focus rings on light ground */
+  --rule-faint: #999;        /* hairlines that should recede */
+}
+
 @media screen and (prefers-reduced-motion: reduce) {
   html {
     scroll-behavior: auto;
@@ -9,12 +23,12 @@
     font-size: 0.625em;
     font-family: "Arial", "Helvetica", sans-serif;
     position: relative;
-    background-color: rgb(37, 38, 37);
+    background-color: var(--ground-dark);
     scroll-behavior: smooth;
   }
   body > div {
     font-size: 1.8rem;
-    color: #333;
+    color: var(--band);
     position: relative;
     z-index: 1;
   }
@@ -26,10 +40,10 @@
     text-transform: uppercase;
     margin: 0;
   }
-  h2.c.how-we-can-help{color: #76ac41;}
+  h2.c.how-we-can-help{color: var(--accent);}
   h1 {
     font-size: 5rem;
-    color: #ddd;
+    color: var(--text-on-dark);
     text-transform: none;
     margin-bottom: 3rem;
     text-transform: capitalize;
@@ -53,7 +67,7 @@
     font-size: 1.8rem;
   }
   a {
-    color: #76ac41;
+    color: var(--accent);
   }
   img {
     max-width: 100%;
@@ -82,10 +96,10 @@
   a.more, a.contact, button[type="submit"] {
     text-decoration: none;
     background: none;
-    color: #333;
+    color: var(--band);
     padding: 1rem 3rem;
     display: inline-block;
-    border: #76ac41 solid 0.3rem;
+    border: var(--accent) solid 0.3rem;
     cursor: pointer;
     font-size: 1.9rem;
     transition: margin 300ms, padding 300ms;
@@ -120,7 +134,7 @@
 
 @media only screen {
   body {
-    background-color: #fff;
+    background-color: var(--ground);
     margin: 0;
     animation: fadein 1.5s;
 
@@ -257,7 +271,7 @@
     font-family: "Arial Black", "Arial", "Helvetica", sans-serif;
     font-weight: bold;
     margin:  0 0 1rem 0;
-    color: #C6D768;
+    color: var(--accent-on-dark);
   }
   .page main > div:nth-child(1) > .s:first-of-type .c.text p a {
     color: white;
@@ -268,7 +282,7 @@
   }
   .page main > div:nth-child(1) > .s:first-of-type .c.text p:nth-child(odd),
   .page main > div:nth-child(1) > .s:first-of-type .c.text p:nth-child(odd) {
-    color: #C6D768;
+    color: var(--accent-on-dark);
   }
   .page main > div:nth-child(1) > .s:first-of-type .c.actions {
     margin: 3.5rem 0 3.5rem 0;
@@ -279,13 +293,13 @@
     border-radius: 2rem;
     min-height: 5rem;
     max-width: 60%;
-    background: #252726 url("/_/img/icon/kb.svg") no-repeat;
+    background: var(--ground-dark) url("/_/img/icon/kb.svg") no-repeat;
     background-size: 7rem 7rem;
     background-position: -0.3rem top;
   }
   .page main > div:nth-child(1) > .s:first-of-type .c.badge p {
     font-size: 1.4rem;
-    color: #fff;
+    color: var(--ground);
     margin: 0.5rem 0;
   }
 

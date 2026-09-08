@@ -21,7 +21,7 @@ template.innerHTML = `
 <style>
   @media only screen {
     a {
-      color: #ddd;
+      color: var(--text-on-dark);
     }
     .menu {
       list-style-type: none;
@@ -41,8 +41,8 @@ template.innerHTML = `
     }
     /* For browsers that don't support :focus-visible */
     a:focus, button:focus, input:focus {
-      outline: 2px solid #ccc;
-      outline-offset: 4px;
+      outline: 0.2rem solid var(--rule);
+      outline-offset: 0.4rem;
     }
 
     /* Remove :focus styling for browsers that do support :focus-visible */
@@ -53,29 +53,29 @@ template.innerHTML = `
 
     /* Add focus styling back in browsers that do support :focus-visible */
     a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
-      outline: 2px solid #ccc;
-      outline-offset: 4px;
+      outline: 0.2rem solid var(--rule);
+      outline-offset: 0.4rem;
     }
 
     input:focus-visible {
-      outline: 2px solid #ccc;
+      outline: 0.2rem solid var(--rule);
       outline-offset: 0px;
     }
 
     a:active {
-      outline: 2px solid rgb(196, 215, 105);
-      outline-offset: 5px;
+      outline: 0.2rem solid var(--accent-on-dark);
+      outline-offset: 0.5rem;
     }
 
     input:focus-visible {
       border: none;
-      border-radius: 2px;
+      border-radius: 0.2rem;
     }
   }
   
   @media only screen and (max-width: 1040px) {
     header {
-      background-color: #232423;
+      background-color: var(--ground-dark);
       position: relative;
       overflow: hidden;
     }
@@ -89,11 +89,11 @@ template.innerHTML = `
     }
     .menu.open {
       margin-top: 0px;
-      /* box-shadow: 0 3px 10px rgba(0,0,0,0.1); */
+      /* box-shadow: 0 0.3rem 1rem rgba(0,0,0,0.1); */
     }
     .menu li:not(:last-child) {
       position: relative;
-      /* border-bottom: .1rem solid #999; */
+      /* border-bottom: .1rem solid var(--rule-faint); */
     }
     .menu li a {
       padding: 0rem 2rem;
@@ -109,11 +109,11 @@ template.innerHTML = `
       display: flex;
       justify-content: space-between;
       padding: 0;
-      margin: 20px 0;
-      gap: 10px 10px;
+      margin: 2rem 0;
+      gap: 1rem 1rem;
     }
     .menu li a {
-      padding: 3px 5px;
+      padding: 0.3rem 0.5rem;
     }
 
   }
@@ -179,7 +179,7 @@ template.innerHTML = `
       position: absolute;
       height: .6rem;
       width: 100%;
-      background: rgb(196, 215, 105);
+      background: var(--accent-on-dark);
       opacity: 1;
       left: 0;
       transform: rotate(0deg);

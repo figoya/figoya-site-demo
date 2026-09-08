@@ -2,10 +2,10 @@
   .s.esg {
     position: relative;
     z-index: 1;
-    background: #252625;
+    background: var(--ground-dark);
     padding: 4rem;
     margin: 0 -4rem 0 -4rem;
-    color: #fff;
+    color: var(--ground);
   }
   .s.esg > div:nth-child(1) {
     margin-bottom: 3rem;
@@ -14,7 +14,7 @@
     margin-bottom: 5rem;
   }
   .c.esg.heading h2 {
-    color: #76ac41;
+    color: var(--accent);
   }
   .c.esg.text p {
     font-size: 2rem;
@@ -36,7 +36,7 @@
     padding: 10rem 0;
     quotes: "“" "”" "‘" "’";
     font-style: italic;
-    color: #fff;
+    color: var(--ground);
   }
   .c.esg.quote q::before {
     content: open-quote;
@@ -47,7 +47,7 @@
     top: 0;
     left: -1rem;
     font-style: normal;
-    color: #76ac41;
+    color: var(--accent);
   }
   .c.esg.quote q::after {
     content: close-quote;
@@ -58,7 +58,7 @@
     right: 0;
     bottom: 0;
     font-style: normal;
-    color: #76ac41;
+    color: var(--accent);
   }
 }
 
@@ -92,7 +92,7 @@
   .s.esg {
     padding: 10rem 46rem;
     margin: 0 -46rem 0 -46rem;
-    background: #252625;
+    background: var(--ground-dark);
   }
   .c.esg.graphic img {
     width: 80%;

@@ -80,10 +80,10 @@ template.innerHTML = `
 
 @media only screen {
     footer {
-      border-top: 0.1rem solid #999;
-      background-color: #333;
+      border-top: 0.1rem solid var(--rule-faint);
+      background-color: var(--band);
       min-height: 10rem;
-      color: #ccc;
+      color: var(--rule);
       font-size: 1.5rem;
       padding: 2rem;
     }
@@ -113,7 +113,7 @@ template.innerHTML = `
 
   @media only screen {
     a {
-      color: #ddd;
+      color: var(--text-on-dark);
       text-decoration: underline;
     }
     a:hover {
@@ -122,8 +122,8 @@ template.innerHTML = `
 
    /* For browsers that don't support :focus-visible */
    a:focus, button:focus, input:focus, textarea:focus {
-      outline: 2px solid #ccc;
-      outline-offset: 4px;
+      outline: 0.2rem solid var(--rule);
+      outline-offset: 0.4rem;
     }
 
     /* Remove :focus styling for browsers that do support :focus-visible */
@@ -134,23 +134,23 @@ template.innerHTML = `
 
     /* Add focus styling back in browsers that do support :focus-visible */
     a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible, textarea:focus-visible {
-      outline: 2px solid #ccc;
-      outline-offset: 4px;
+      outline: 0.2rem solid var(--rule);
+      outline-offset: 0.4rem;
     }
 
     input:focus-visible, textarea:focus-visible {
-      outline: 2px solid #ccc;
+      outline: 0.2rem solid var(--rule);
       outline-offset: 0px;
     }
 
     a:active {
-      outline: 2px solid rgb(196, 215, 105);
-      outline-offset: 5px;
+      outline: 0.2rem solid var(--accent-on-dark);
+      outline-offset: 0.5rem;
     }
 
     input:focus-visible, textarea:focus-visible {
       border: none;
-      border-radius: 2px;
+      border-radius: 0.2rem;
     }
     ul {
       list-style-type: none;
@@ -171,8 +171,8 @@ template.innerHTML = `
       width: 100%;
     }
     button {
-      background: #ddd;
-      color: #333;
+      background: var(--text-on-dark);
+      color: var(--band);
       padding: .5rem 1.5rem;
       display: inline-block;
       border: none;
@@ -229,7 +229,7 @@ template.innerHTML = `
       top: -.5rem;
       width: 1rem;
       height: 1rem;
-      color: #ddd;
+      color: var(--text-on-dark);
       background-size: 1rem;
     }
     .c.form label span {
@@ -260,7 +260,7 @@ template.innerHTML = `
       top: -.5rem;
       width: 1rem;
       height: 1rem;
-      color: #ddd;
+      color: var(--text-on-dark);
       background-size: 1rem;
     }
 

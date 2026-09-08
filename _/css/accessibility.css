@@ -1,47 +1,49 @@
-/* For browsers that don't support :focus-visible */
-a:focus, button:focus, input:focus {
-  outline: 2px solid rgb(196, 215, 105);
-  outline-offset: 4px;
-}
+@media only screen {
+  /* For browsers that don't support :focus-visible */
+  a:focus, button:focus, input:focus {
+    outline: 0.2rem solid var(--accent-on-dark);
+    outline-offset: 0.4rem;
+  }
 
-/* Remove :focus styling for browsers that do support :focus-visible */
-a:focus:not(:focus-visible), button:focus:not(:focus-visible), input:focus:not(:focus-visible) {
-  outline: none;
-  outline-offset: 0;
-}
+  /* Remove :focus styling for browsers that do support :focus-visible */
+  a:focus:not(:focus-visible), button:focus:not(:focus-visible), input:focus:not(:focus-visible) {
+    outline: none;
+    outline-offset: 0;
+  }
 
-/* Add focus styling back in browsers that do support :focus-visible */
-a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
-  outline: 2px solid rgb(196, 215, 105);
-  outline-offset: 4px;
-}
+  /* Add focus styling back in browsers that do support :focus-visible */
+  a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible {
+    outline: 0.2rem solid var(--accent-on-dark);
+    outline-offset: 0.4rem;
+  }
 
-input:focus-visible {
-  outline: 2px solid rgb(196, 215, 105);
-  outline-offset: 0px;
-}
+  input:focus-visible {
+    outline: 0.2rem solid var(--accent-on-dark);
+    outline-offset: 0px;
+  }
 
-a:active {
-  outline: 2px solid rgb(119, 172, 66);
-  outline-offset: 5px;
-}
+  a:active {
+    outline: 0.2rem solid var(--accent);
+    outline-offset: 0.5rem;
+  }
 
-input:focus-visible {
-  border: none;
-  border-radius: 2px;
-}
+  input:focus-visible {
+    border: none;
+    border-radius: 0.2rem;
+  }
 
-/* visually hidden */
+  /* visually hidden */
 
-a span {
-  border: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  height: 1px;
-  margin: 0;
-  overflow: hidden;
-  padding: 0;
-  position: absolute;
-  white-space: nowrap;
-  width: 1px;
+  a span {
+    border: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
 }
