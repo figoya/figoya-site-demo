@@ -142,7 +142,7 @@
   }
 }
 @media only screen and (max-width: 1040px) {
-  body > div {
+  body {
     overflow-x: hidden;
   }
   h1 {

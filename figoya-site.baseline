@@ -7,4 +7,3 @@ HTML-3	privacy-policy/index.html	the <script>0;</script> guard is missing right 
 HTML-4	privacy-policy/index.html	body should contain one layout <div> (found main)
 HTML-5	privacy-policy/index.html	main has 1 children (div); expected exactly two <div> rows
 HTML-10	privacy-policy/index.html	7 <h1> elements; expected exactly one
-CSS-8	_/css/site.css	overflow-x: hidden on "body > div"; it lives on body only
