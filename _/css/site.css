@@ -268,7 +268,7 @@
     margin:  0 0 1rem 0;
     color: var(--text-on-dark-strong);
   }
-  .page main > div:nth-child(1) > .s:first-of-type .c.text p span{
+  .page main > div:nth-child(1) > .s:first-of-type .c.text p b {
     font-family: "Arial Black", "Arial", "Helvetica", sans-serif;
     font-weight: bold;
     margin:  0 0 1rem 0;
