@@ -1,0 +1,102 @@
+{
+  "version": 1,
+  "pages": {
+    "home": {
+      "path": "/",
+      "file": "index.html",
+      "sections": {
+        "what-we-do": "29b4a36792cba3c0",
+        "how-we-can-help": "330af1fbf7b9c5ac",
+        "esg": "a17be42de5c589e1",
+        "did-you-know": "2e709fc9d7766e97"
+      }
+    },
+    "services": {
+      "path": "/services",
+      "file": "services/index.html",
+      "sections": {
+        "intro": "48763e109bc4f927",
+        "audit": "3ae90ad11e89b934",
+        "fix": "56e7e2daf5955e49",
+        "build": "c4a996de4ef8f751",
+        "teach": "8f4c34405f3e1e7c"
+      }
+    },
+    "the-internet-pollutes": {
+      "path": "/the-internet-pollutes",
+      "file": "the-internet-pollutes/index.html",
+      "sections": {
+        "intro": "65df9f9ac1702028",
+        "how-much": "cc0f91f8a7473a73",
+        "how": "35fb71657b64c234",
+        "green-web-apps": "20729551e54bbecf",
+        "how-we-help": "b62d8fd9c448a380"
+      }
+    },
+    "how-we-work": {
+      "path": "/how-we-work",
+      "file": "how-we-work/index.html",
+      "sections": {
+        "intro": "36ed0890e1f7415d",
+        "agile": "864d5ae60c3c2407",
+        "transparency": "cfbd7a7412db0570",
+        "accountability": "871d5c7b4716ee9a"
+      }
+    },
+    "about-us": {
+      "path": "/about-us",
+      "file": "about-us/index.html",
+      "sections": {
+        "intro": "66e65ea9050dcb84",
+        "person-1": "f0bfd2054a03abe6",
+        "person-2": "270416a99f1f55fb"
+      }
+    },
+    "blog": {
+      "path": "/blog",
+      "file": "blog/index.html",
+      "sections": {
+        "intro": "66cfa842d624af54",
+        "blog-1": "22b255aa932a8a20",
+        "blog-2": "cd4babd5f750e5d2",
+        "blog-3": "1403e352f0d06110"
+      }
+    },
+    "contact-us": {
+      "path": "/contact-us",
+      "file": "contact-us/index.html",
+      "sections": {
+        "intro": "ba70abb604577b32",
+        "by-email": "f6b4d3fd2ee0764d"
+      }
+    },
+    "privacy-policy": {
+      "path": "/privacy-policy",
+      "file": "privacy-policy/index.html",
+      "sections": {
+        "policy": "484ec7ab6e5d0714",
+        "interpretation-and-definitions": "5ee9c0d135d2cd78",
+        "interpretation": "6e434298690c3d2b",
+        "definitions": "1f51b584f6be023a",
+        "collecting-and-using-your-personal-data": "40a0ad038acb5839",
+        "types-of-data-collected": "79d47e0bb17d419f",
+        "personal-data": "79998f99a62e2d64",
+        "usage-data": "bf48272e4a9d27dc",
+        "tracking-technologies-and-cookies": "bb76011f82359cc9",
+        "use-of-your-personal-data": "2d34d0f4ac4999e5",
+        "retention-of-your-personal-data": "d9a5e6cd253a9edc",
+        "transfer-of-your-personal-data": "72fd9b9f95c3d2ec",
+        "delete-your-personal-data": "f3187321a8ea91dc",
+        "disclosure-of-your-personal-data": "36efa64975de1518",
+        "business-transactions": "1303aabe985cd481",
+        "law-enforcement": "43ad4f14ae60f91a",
+        "other-legal-requirements": "29c00885630ddfe9",
+        "security-of-your-personal-data": "07fabde26d2d13c7",
+        "children-s-privacy": "549bd891ec5e047c",
+        "links-to-other-websites": "f31392971dbd515d",
+        "changes-to-this-privacy-policy": "32d200f1c4f907e5",
+        "contact-us": "ef203ec9af452c02"
+      }
+    }
+  }
+}
