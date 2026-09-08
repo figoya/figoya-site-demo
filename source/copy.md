@@ -221,33 +221,6 @@ We want to make a difference and we think you do too.
 ::graphic
 ![Flowers illustration using the Figoya Logo as the petals.](/_/img/illustration-flowers.svg)
 
-# Environmental, Social and Governance {esg}
-
-path: /esg
-title: Figoya - Services
-
-## Summary {intro}
-
-ESG is a set of standards measuring a business's impact on society and the environment, as well as its transparency and accountability.
-
-::actions
-[Contact Us](/contact-us){contact}
-
-## What is ESG? {what-is-esg}
-
-Environmental, Social and Governance (ESG) is an informal a framework that evaluates a company's impact on the environment, society, and governance, used by investors, companies, governments, NGOs, and consumers to promote sustainable development. used by a wide range of stakeholders, including investors, asset managers, corporations, governments, NGOs, and consumers.
-
-::graphic
-![Figoya logo without text](/_/img/figoya-logo-no-text-bw-1.svg)
-
-## How low carbon web apps can help meet ESG targets {esg-targets}
-
-Reducing the carbon emissions associated with a web app can help a corporation achieve its ESG targets by improving its environmental impact, reducing costs, enhancing its reputation, ensuring compliance with regulations, and promoting innovation.
-
-- **Environmental Impact:** Carbon emissions are a major contributor to global warming and climate change. By reducing the carbon emissions associated with their web app, a corporation can help mitigate its impact on the environment.- **Cost Savings:** Reducing carbon emissions can also lead to cost savings for a corporation. By optimizing the code and infrastructure of their web app, a corporation can reduce the amount of energy needed to run the app, which can translate into lower energy bills and operating costs.- **Reputation:** ESG factors are becoming increasingly important to consumers and investors. By reducing carbon emissions and taking steps to be more environmentally responsible, a corporation can improve its reputation and appeal to stakeholders who value sustainability.- **Compliance:** Many countries and regions have regulatory requirements for companies to reduce their carbon emissions. By reducing the carbon emissions associated with their web app, corporations can ensure compliance with these regulations and avoid potential penalties or fines.- **Innovation:** Finally, reducing carbon emissions from a web app can encourage innovation and creativity. Companies may need to explore new technologies or business models to achieve these reductions, which can lead to new ideas and opportunities.
-::graphic
-![Figoya logo without text](/_/img/figoya-logo-no-text-bw-1.svg)
-
 # How we work {how-we-work}
 
 path: /how-we-work

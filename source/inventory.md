@@ -23,8 +23,6 @@ source/brief.md names real families.
 | how                   | the-internet-pollutes | own file |         |
 | green-web-apps        | the-internet-pollutes | own file |         |
 | how-we-help           | the-internet-pollutes | own file |         |
-| what-is-esg           | esg                   | shared   |         |
-| esg-targets           | esg                   | shared   |         |
 | agile                 | how-we-work           | shared   |         |
 | transparency          | how-we-work           | shared   |         |
 | accountability        | how-we-work           | shared   |         |
