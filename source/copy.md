@@ -1,9 +1,6 @@
 <!--
 source/copy.md for the demo site. Transcribed from the hand-built pages on
-2026-09-08; every word is the site's own. Roles the renderer cannot produce
-yet (graphic, badge, quote, user-input) are marked with their directive so
-the copy is complete even where the tool is not. See FAULTS.md for what the
-transcription found. Format: figoya-site docs/COPY-FORMAT.md.
+2026-09-08; every word is the site's own. See FAULTS.md for what the transcription found. Format: figoya-site docs/COPY-FORMAT.md.
 -->
 
 # Figoya - Low CO2 Digital {home}
@@ -16,7 +13,7 @@ description: We build low carbon web apps and websites.
 
 Reduce the [CO2 emissions of your websites or web apps](/the-internet-pollutes) by up to 80%
 
-Help your corporation meet its [sustainability targets](https://www.investopedia.com/terms/e/environmental-social-and-governance-esg-criteria.asp)
+**Help your corporation meet its** [sustainability targets](https://www.investopedia.com/terms/e/environmental-social-and-governance-esg-criteria.asp)
 
 ::actions
 [Contact Us](/contact-us){contact}
@@ -55,10 +52,12 @@ ESG will play a huge role in the UK government's plan to reach Net Zero by 2050.
 The CO2 emissions of the internet is a growing concern and will be a key consideration in ESG strategies over the next decade and beyond.
 
 ::actions
-[Read More](https://corporatefinanceinstitute.com/resources/esg/esg-environmental-social-governance/ "about ESG"){alt}
+[Read More](https://corporatefinanceinstitute.com/resources/esg/esg-environmental-social-governance/ "about ESG"){more alt}
+
+---
 
 ::quote
-"ESG has evolved from other historical movements that focused on health and safety issues, pollution reduction, and corporate philanthropy."
+ESG has evolved from other historical movements that focused on health and safety issues, pollution reduction, and corporate philanthropy.
 
 ## Did you know? {did-you-know}
 
@@ -68,7 +67,7 @@ The Internet causes more greenhouse gas emissions than the aviation industry, an
 [Read More](/the-internet-pollutes "about how the internet pollutes")
 
 ::text two
-The UK Government has created a new department to oversee its commitment to Net Zero by 2050. "[it] must grasp the clear opportunities provided by ESG frameworks for the race to net zero." *- Alexander Stafford MP, Chair of the All-Party Parliamentary Group on ESG*
+The UK Government has created a new department to oversee its commitment to Net Zero by 2050. «[it] must grasp the clear opportunities provided by ESG frameworks for the race to net zero.» *- Alexander Stafford MP, Chair of the All-Party Parliamentary Group on ESG*
 
 [Read More](https://esgclarity.com/uk-government-creates-net-zero-department/ "about the new UK new department for Net Zero")
 
@@ -351,14 +350,17 @@ We would love to hear from you
 
 Email us by [using the form below](#by-email). We'll get back to you straight away.
 
-## Send us an email {by-email}
+## Send us an email {#by-email}
 
 ::user-input contact-form
-Name
-Email Address
-Phone Number (optional)
-Your Message
-Send Message
+action: https://api.web3forms.com/submit
+access_key: d685dd99-a622-4931-8862-e485a293fc68
+subject: Email via Figoya website
+name: Name
+email: Email Address
+phone: Phone Number (optional)
+message: Your Message
+submit: Send Message
 
 # Privacy Policy {privacy-policy}
 
