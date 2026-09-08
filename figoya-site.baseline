@@ -1,0 +1,149 @@
+# figoya-site baseline: deviations from the rules that this site accepts for now.
+# One per line: rule <tab> file <tab> message. `figoya-site check` fails on anything
+# not listed here and reports lines that no longer apply. Regenerate with
+# `figoya-site check --update-baseline`; remove lines as you fix things.
+HTML-7	about-us/index.html	stylesheet is /_/css/style.css?1.0.1, expected /_/css/page/about-us.css
+SG-1	about-us/index.html	section class "s person name-1": expected exactly "s <name>" (modifiers belong on components)
+SG-4	about-us/index.html	component "c person name-1 heading" sits directly in section "person" instead of in a row
+SG-9	about-us/index.html	component "c person name-1 heading": the role must come third (c <section> <role> <modifiers>)
+SG-9	about-us/index.html	component "c person name-1 text": the role must come third (c <section> <role> <modifiers>)
+SG-9	about-us/index.html	component "c person name-1 actions": the role must come third (c <section> <role> <modifiers>)
+SG-1	about-us/index.html	section class "s person name-2": expected exactly "s <name>" (modifiers belong on components)
+SG-4	about-us/index.html	component "c person name-2 heading" sits directly in section "person" instead of in a row
+SG-9	about-us/index.html	component "c person name-2 heading": the role must come third (c <section> <role> <modifiers>)
+SG-9	about-us/index.html	component "c person name-2 text": the role must come third (c <section> <role> <modifiers>)
+SG-9	about-us/index.html	component "c person name-2 actions": the role must come third (c <section> <role> <modifiers>)
+HTML-7	blog/index.html	stylesheet is /_/css/style.css?1.0.1, expected /_/css/page/blog.css
+SG-1	blog/index.html	section class "s blog-summary one": expected exactly "s <name>" (modifiers belong on components)
+SG-4	blog/index.html	component "c blog-summary one heading" sits directly in section "blog-summary" instead of in a row
+SG-9	blog/index.html	component "c blog-summary one heading": the role must come third (c <section> <role> <modifiers>)
+SG-9	blog/index.html	component "c blog-summary one text": the role must come third (c <section> <role> <modifiers>)
+SG-9	blog/index.html	component "c blog-summary one actions": the role must come third (c <section> <role> <modifiers>)
+SG-1	blog/index.html	section class "s blog-summary two": expected exactly "s <name>" (modifiers belong on components)
+SG-4	blog/index.html	component "c blog-summary two heading" sits directly in section "blog-summary" instead of in a row
+SG-9	blog/index.html	component "c blog-summary two heading": the role must come third (c <section> <role> <modifiers>)
+SG-9	blog/index.html	component "c blog-summary two text": the role must come third (c <section> <role> <modifiers>)
+SG-9	blog/index.html	component "c blog-summary two actions": the role must come third (c <section> <role> <modifiers>)
+SG-1	blog/index.html	section class "s blog-summary three": expected exactly "s <name>" (modifiers belong on components)
+SG-4	blog/index.html	component "c blog-summary three heading" sits directly in section "blog-summary" instead of in a row
+SG-9	blog/index.html	component "c blog-summary three heading": the role must come third (c <section> <role> <modifiers>)
+SG-9	blog/index.html	component "c blog-summary three text": the role must come third (c <section> <role> <modifiers>)
+SG-9	blog/index.html	component "c blog-summary three actions": the role must come third (c <section> <role> <modifiers>)
+HTML-7	contact-us/index.html	stylesheet is /_/css/style.css?1.0.1, expected /_/css/page/contact-us.css
+A11Y-5	esg/index.html	<img src="/_/img/figoya-logo-no-text-bw-1.svg"> has no alt attribute
+HTML-7	how-we-work/index.html	stylesheet is /_/css/style.css?1.0.1, expected /_/css/page/how-we-work.css
+HTML-5	how-we-work/index.html	the content row wraps an extra <div>; sections should be its direct children
+HTML-1	index.html	stray closing tag </section>
+HTML-11	index.html	<sections> is not an HTML element
+SG-1	index.html	class "s" on a <sections>; only <section> carries s
+SG-4	index.html	component "c did-you-know heading" sits directly in section "did-you-know" instead of in a row
+HTML-2	privacy-policy/index.html	body class is "page privacy", expected "page privacy-policy"
+HTML-3	privacy-policy/index.html	the <script>0;</script> guard is missing right after <body>
+HTML-4	privacy-policy/index.html	body should contain one layout <div> (found main)
+HTML-7	privacy-policy/index.html	stylesheet is /_/css/style.css?1.0.1, expected /_/css/page/privacy-policy.css
+HTML-5	privacy-policy/index.html	main has 1 children (div); expected exactly two <div> rows
+HTML-10	privacy-policy/index.html	7 <h1> elements; expected exactly one
+SG-5	about-us/index.html	section "person" appears twice on this page (names are unique across the site; only the hero may repeat)
+SG-5	blog/index.html	section "blog-summary" appears twice on this page (names are unique across the site; only the hero may repeat)
+SG-5	blog/index.html	section "blog-summary" appears twice on this page (names are unique across the site; only the hero may repeat)
+SG-5	esg/index.html	section "esg-targets" appears twice on this page (names are unique across the site; only the hero may repeat)
+MQ-3	_/css/accessibility.css	"a:focus, button:focus, input:focus" is outside any media query
+MQ-2	_/css/accessibility.css	outline: 2px solid rgb(196, 215, 105) uses 2px; sizes are in rem (px only for hairlines)
+CSS-9	_/css/accessibility.css	outline: 2px solid rgb(196, 215, 105) is a colour literal; use a palette custom property
+MQ-2	_/css/accessibility.css	outline-offset: 4px uses 4px; sizes are in rem (px only for hairlines)
+MQ-3	_/css/accessibility.css	"a:focus:not(:focus-visible), button:focus:not(:focus-visible), input:focus:not(:focus-visible)" is outside any media query
+MQ-3	_/css/accessibility.css	"a:focus-visible, button:focus-visible, input:focus-visible, summary:focus-visible" is outside any media query
+MQ-2	_/css/accessibility.css	outline: 2px solid rgb(196, 215, 105) uses 2px; sizes are in rem (px only for hairlines)
+CSS-9	_/css/accessibility.css	outline: 2px solid rgb(196, 215, 105) is a colour literal; use a palette custom property
+MQ-2	_/css/accessibility.css	outline-offset: 4px uses 4px; sizes are in rem (px only for hairlines)
+MQ-3	_/css/accessibility.css	"input:focus-visible" is outside any media query
+MQ-2	_/css/accessibility.css	outline: 2px solid rgb(196, 215, 105) uses 2px; sizes are in rem (px only for hairlines)
+CSS-9	_/css/accessibility.css	outline: 2px solid rgb(196, 215, 105) is a colour literal; use a palette custom property
+MQ-3	_/css/accessibility.css	"a:active" is outside any media query
+MQ-2	_/css/accessibility.css	outline: 2px solid rgb(119, 172, 66) uses 2px; sizes are in rem (px only for hairlines)
+CSS-9	_/css/accessibility.css	outline: 2px solid rgb(119, 172, 66) is a colour literal; use a palette custom property
+MQ-2	_/css/accessibility.css	outline-offset: 5px uses 5px; sizes are in rem (px only for hairlines)
+MQ-3	_/css/accessibility.css	"input:focus-visible" is outside any media query
+MQ-2	_/css/accessibility.css	border-radius: 2px uses 2px; sizes are in rem (px only for hairlines)
+MQ-3	_/css/accessibility.css	"a span" is outside any media query
+CSS-10	_/css/page/contact-us.css	@import "/_/css/section/via-social-media.css" resolves to nothing
+SP-2	_/css/section/by-email.css	".s.by-email .c.user-input" descends from .s.by-email to a component; write .c.by-email.<role> instead
+CSS-9	_/css/section/by-email.css	border: 0.1rem solid #ccc is a colour literal; use a palette custom property
+CSS-9	_/css/section/did-you-know.css	border-top: 0.3rem solid #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/esg.css	background: #252625 is a colour literal; use a palette custom property
+CSS-9	_/css/section/esg.css	color: #fff is a colour literal; use a palette custom property
+CSS-9	_/css/section/esg.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/esg.css	color: #fff is a colour literal; use a palette custom property
+CSS-9	_/css/section/esg.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/esg.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/esg.css	background: #252625 is a colour literal; use a palette custom property
+MQ-4	_/css/section/how-we-can-help.css	min-width 950px is not on the ladder (400/500/600/700/800/900/1040)
+MQ-4	_/css/section/how-we-can-help.css	min-width 950px is not on the ladder (400/500/600/700/800/900/1040)
+CSS-9	_/css/section/shared.css	color: #1d1d1b is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	border-top: solid 0.3rem #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	border-bottom: solid 0.3rem #76ac41 is a colour literal; use a palette custom property
+SP-2	_/css/section/shared.css	".s.how-much .c.actions" descends from .s.how-much to a component; write .c.how-much.<role> instead
+CSS-9	_/css/section/shared.css	background: #252625 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	color: #fff is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	border-top: solid 0.3rem #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	border-bottom: solid 0.3rem #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	background: #252625 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	color: #1d1d1b is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	border-top: solid 0.3rem #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	border-bottom: solid 0.3rem #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	background: #333 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	color: #ddd is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	border-top: solid 0.3rem #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/section/shared.css	border-bottom: solid 0.3rem #76ac41 is a colour literal; use a palette custom property
+FAM-2	_/css/section/shared.css	section "transparency" is listed in two families ("Section style C" and "Section style D")
+CSS-1	_/css/section/via-social-media	a file under _/css without a .css extension; nothing will load it
+CSS-9	_/css/site.css	background-color: rgb(37, 38, 37) is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	color: #333 is a colour literal; use a palette custom property
+SG-3	_/css/site.css	"h2.c.how-we-can-help" qualifies a grammar class with an element (h2.c.how-we-can-help)
+CSS-9	_/css/site.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	color: #ddd is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	color: #76ac41 is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	color: #333 is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	border: #76ac41 solid 0.3rem is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	color: white is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	background-color: #fff is a colour literal; use a palette custom property
+CSS-8	_/css/site.css	overflow-x: hidden on "body > div"; it lives on body only
+CSS-9	_/css/site.css	color: white is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	color: white is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	color: #C6D768 is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	color: white is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	color: white is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	color: #C6D768 is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	background: #252726 url("/_/img/icon/kb.svg") no-repeat is a colour literal; use a palette custom property
+CSS-9	_/css/site.css	color: #fff is a colour literal; use a palette custom property
+MQ-2	_/js/components/templates/footer.js	outline: 2px solid #ccc uses 2px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/footer.js	outline-offset: 4px uses 4px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/footer.js	outline: 2px solid #ccc uses 2px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/footer.js	outline-offset: 4px uses 4px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/footer.js	outline: 2px solid #ccc uses 2px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/footer.js	outline: 2px solid rgb(196, 215, 105) uses 2px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/footer.js	outline-offset: 5px uses 5px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/footer.js	border-radius: 2px uses 2px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	outline: 2px solid #ccc uses 2px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	outline-offset: 4px uses 4px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	outline: 2px solid #ccc uses 2px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	outline-offset: 4px uses 4px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	outline: 2px solid #ccc uses 2px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	outline: 2px solid rgb(196, 215, 105) uses 2px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	outline-offset: 5px uses 5px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	border-radius: 2px uses 2px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	/* box-shadow: 0 3px 10px rgba(0,0,0,0.1) uses 3px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	/* box-shadow: 0 3px 10px rgba(0,0,0,0.1) uses 10px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	margin: 20px 0 uses 20px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	gap: 10px 10px uses 10px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	gap: 10px 10px uses 10px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	padding: 3px 5px uses 3px; sizes are in rem (px only for hairlines)
+MQ-2	_/js/components/templates/header.js	padding: 3px 5px uses 5px; sizes are in rem (px only for hairlines)
