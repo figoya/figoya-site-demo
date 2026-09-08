@@ -1,4 +1,4 @@
-import { subscribe, publish } from '/node_modules/low-carbon-state-manager/dist/index.min.js';
+import { subscribe, publish } from './vendor/figoya-state-manager.js';
 
 const mobileOrTablet = window.matchMedia("(max-width: 1040px)");
 mobileOrTablet.addEventListener("change", (event) => {

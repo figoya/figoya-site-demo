@@ -1,13 +1,14 @@
 {
-  "name": "figoya-website",
-  "version": "1.1.1",
-  "private": false,
+  "name": "figoya-site-demo",
+  "private": true,
   "type": "module",
   "scripts": {
-    "dev": "http-server -p 3000 --cors",
-    "lint": "eslint --cache --ext .js"
+    "status": "figoya-site status",
+    "check": "figoya-site check",
+    "apply-copy": "figoya-site apply-copy",
+    "dev": "http-server -p 3000 --cors"
   },
-  "dependencies": {
-    "low-carbon-state-manager": "^0.6.1"
+  "devDependencies": {
+    "figoya-site": "^0.1.0"
   }
 }

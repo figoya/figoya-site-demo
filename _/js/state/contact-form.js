@@ -1,5 +1,6 @@
-import { addStateModifier } from '/node_modules/low-carbon-state-manager/dist/index.min.js';
+import { addStateModifier } from '../vendor/figoya-state-manager.js';
 
+// State for the stock contact-form component (lib/components/contact-form.js).
 addStateModifier((customEventName, currentState, data) => {
   switch (customEventName) {
     case "CONTACT_FORM_SENT":
@@ -11,7 +12,7 @@ addStateModifier((customEventName, currentState, data) => {
       return {
         ...currentState,
         contactFormSending: false,
-    };
+      };
     case "CONTACT_FORM_FAILED":
       return {
         ...currentState,

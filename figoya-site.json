@@ -98,5 +98,21 @@
         "contact-us": "ef203ec9af452c02"
       }
     }
+  },
+  "runtime": {
+    "package": "0.1.0",
+    "figoya-state-manager": "0.8.0",
+    "files": {
+      "_/css/accessibility.css": "df5289ad84c23c13",
+      "_/css/animation.css": "cb7bc4f69ccad4dc",
+      "_/js/index.js": "f9d49763af73001e",
+      "_/js/state/index.js": "0180bfb9e0e33e0b",
+      "_/js/state/global.js": "aae9d4d9d8752b29",
+      "_/js/state/main-menu.js": "5f9befa338ca07d4",
+      "_/js/state/contact-form.js": "abeccd21c8894db4",
+      "_/js/components/header.js": "5a910bc8a0b81d0b",
+      "_/js/components/footer.js": "0c49ad7ba1e27a2d",
+      "_/js/vendor/figoya-state-manager.js": "cb956c4df97b9feb"
+    }
   }
 }

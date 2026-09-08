@@ -1,4 +1,4 @@
-import { publish, getState, subscribe } from '/node_modules/low-carbon-state-manager/dist/index.min.js';
+import { publish, getState, subscribe } from '../vendor/figoya-state-manager.js';
 const contactUs = document.querySelector('.page.contact-us .s.by-email');
 const contactUsForm = document.querySelector('.page.contact-us .c.by-email.user-input form');
 const error = contactUsForm.querySelector('.error');

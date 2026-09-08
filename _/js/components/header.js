@@ -1,24 +1,20 @@
-import {
-  publish,
-  getState,
-  subscribe,
-} from "/node_modules/low-carbon-state-manager/dist/index.min.js";
+import { publish, getState, subscribe } from "../vendor/figoya-state-manager.js";
 import template from "./templates/header.js";
 
+// <main-header page="/services">: the site's navigation and logo. The markup
+// comes from source/site.md (templates/header.js is derived); the look comes
+// from _/css/component/header.css, linked from inside the shadow root.
 class MainHeader extends HTMLElement {
   constructor() {
     super();
     this.attachShadow({ mode: "open" });
     this.shadowRoot.appendChild(template.content.cloneNode(true));
+    const page = this.getAttribute("page");
     this.shadowRoot.querySelectorAll("ul > li").forEach((item) => {
-      const href = item.querySelector("a").getAttribute("href");
-      if (this.getAttribute("page") === href) {
-        item.setAttribute("class", "selected");
-      }
-      if (this.getAttribute("page") !== "/") {
-        this.shadowRoot.querySelector("header").classList.add("alt");
-      }
+      if (item.querySelector("a").getAttribute("href") === page) item.setAttribute("class", "selected");
     });
+    // WC-6: the page attribute becomes a class on the root element.
+    if (page !== "/") this.shadowRoot.querySelector("header").classList.add("alt");
   }
   connectedCallback() {
     const matchMobileOrTablet = window.matchMedia(`(max-width: 1040px)`);
@@ -29,7 +25,7 @@ class MainHeader extends HTMLElement {
     if (matchMobileOrTablet.matches) {
       subscribe({
         event: ["MAIN_MENU_OPENED", "MAIN_MENU_CLOSED", "DOM_CONTENT_LOADED"],
-        action: (customEvent, domEvent) => {
+        action: () => {
           const state = getState();
           if (state.mainMenuOpen === true) {
             burger.setAttribute("class", "burger open");

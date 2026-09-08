@@ -1,7 +1,6 @@
-import { addStateModifier } from '/node_modules/low-carbon-state-manager/dist/index.min.js';
+import { addStateModifier } from '../vendor/figoya-state-manager.js';
 
 addStateModifier((customEventName, currentState, data) => {
-
   switch (customEventName) {
     case 'MAIN_MENU_OPENED':
       return {
