@@ -2,7 +2,3 @@
 # One per line: rule <tab> file <tab> message. `figoya-site check` fails on anything
 # not listed here and reports lines that no longer apply. Regenerate with
 # `figoya-site check --update-baseline`; remove lines as you fix things.
-A11Y-7	source/style.md	--accent on --ground is 2.71:1; text owes 4.5:1 (nearest passing shade #588030)
-A11Y-7	source/style.md	--ground on --accent is 2.71:1; text owes 4.5:1 (nearest passing shade #333333)
-A11Y-7	source/style.md	--rule on --ground is 1.61:1; rule owes 3:1 (nearest passing shade #949494)
-A11Y-7	source/style.md	--rule-faint on --ground is 2.85:1; rule owes 3:1 (nearest passing shade #949494)
