@@ -12,7 +12,7 @@ brackets: `ground (rule), band (text)`.
 
 | Property            | Value   | Kind                        | On                         | Role |
 |---------------------|---------|-----------------------------|----------------------------|------|
-| accent              | #76ac41 | ground, text, heading, rule | ground            | headings, links, buttons, rules on light ground |
+| accent              | #588030 | ground, text, heading, rule | ground            | headings, links, buttons, rules on light ground |
 | accent-on-dark      | #c6d768 | text, rule                  | ground-dark, band | the accent's lighter cut for text and focus rings on dark ground |
 | ground              | #fff    | ground, text                | accent            | the page |
 | ground-dark         | #252625 | ground                      |                   | hero, header, footer, dark bands |
@@ -20,8 +20,8 @@ brackets: `ground (rule), band (text)`.
 | text                | #1d1d1b | text                        | ground            | body text on light ground |
 | text-on-dark        | #ddd    | text                        | ground-dark, band | body text on dark ground |
 | text-on-dark-strong | #fff    | text, heading               | ground-dark       | hero text and links on dark ground |
-| rule                | #ccc    | rule, text                  | ground (rule), band (text) | hairlines, form borders, focus rings on light ground |
-| rule-faint          | #999    | rule                        | ground, band      | hairlines that should recede |
+| rule                | #8a8a8a | rule                        | ground            | hairlines, form borders, focus rings on light ground |
+| rule-faint          | #949494 | rule                        | ground, band      | hairlines that should recede |
 
 ## Type
 

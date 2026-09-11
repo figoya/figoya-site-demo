@@ -3,7 +3,7 @@
     border-top: 0.1rem solid var(--rule-faint);
     background-color: var(--band);
     min-height: 10rem;
-    color: var(--rule);
+    color: var(--text-on-dark);
     font-size: 1.5rem;
     padding: 2rem;
   }
