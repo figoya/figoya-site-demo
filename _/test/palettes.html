@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palette proposals</title>
+<style>
+  html { font-size: 0.625em; }
+  body { margin: 0; font: 1.6rem/1.5 system-ui, sans-serif; color: #111; background: #f4f4f4; }
+  header { background: #111; color: #fff; padding: 2rem 3rem; }
+  header h1 { margin: 0; font-size: 2.4rem; } header p { margin: 0.5rem 0 0; }
+  .proposal { background: #fff; margin: 2rem 3rem; padding: 2rem; border-top: 0.4rem solid #111; }
+  .proposal h2 { margin: 0 0 0.5rem; font-size: 2rem; } .proposal h2 small { font-weight: normal; color: #555; font-size: 1.4rem; margin-left: 1rem; }
+  .verdict { margin: 0 0 1rem; color: #555; }
+  .swatches { list-style: none; padding: 0; margin: 0 0 1.5rem; display: grid; grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr)); gap: 0.5rem; }
+  .swatches li { padding: 1rem; font-size: 1.3rem; display: flex; flex-direction: column; min-height: 6rem; }
+  .swatches li b { font-weight: bold; } .swatches li i { font-size: 1.1rem; opacity: 0.8; }
+  .samples { display: grid; grid-template-columns: repeat(auto-fit, minmax(28rem, 1fr)); gap: 1rem; margin: 0 0 1rem; }
+  .sample { padding: 2rem; font-family: "Arial", "Helvetica", sans-serif; }
+  .sample h3 { margin: 0 0 1rem; font-size: 2.5rem; } .sample p { margin: 0 0 1rem; font-size: 1.8rem; }
+  .duties { list-style: none; padding: 0; margin: 0.5rem 0 0; font-size: 1.3rem; columns: 2; }
+  .duties .fail { color: #a00; } .use { font-size: 1.4rem; color: #555; }
+  code { background: #eee; padding: 0 0.4rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Palette proposals</h1>
+  <p>Preferred hue from the site's own --accent, #588030 (90°). Every proposal keeps the roles in source/style.md and meets every contrast duty (A11Y-7); a value marked "moved" was pushed away from its ground until it passed.</p>
+</header>
+
+    <section class="proposal" id="a">
+      <h2>A — One hue <small>the preferred hue throughout; neutrals barely warmed towards it</small></h2>
+      <p class="verdict">every contrast duty passes; 1 value moved to pass</p>
+      <ul class="swatches">
+        <li style="background: #588030; color: #fff"><b>--accent</b><span>#588030</span></li>
+        <li style="background: #a0cb74; color: #111"><b>--accent-on-dark</b><span>#a0cb74</span></li>
+        <li style="background: #ffffff; color: #111"><b>--ground</b><span>#ffffff</span></li>
+        <li style="background: #262724; color: #fff"><b>--ground-dark</b><span>#262724</span></li>
+        <li style="background: #333531; color: #fff"><b>--band</b><span>#333531</span></li>
+        <li style="background: #1c1d1b; color: #fff"><b>--text</b><span>#1c1d1b</span></li>
+        <li style="background: #dddedc; color: #111"><b>--text-on-dark</b><span>#dddedc</span></li>
+        <li style="background: #ffffff; color: #111"><b>--text-on-dark-strong</b><span>#ffffff</span></li>
+        <li style="background: #8a8f85; color: #fff"><b>--rule</b><span>#8a8f85</span></li>
+        <li style="background: #91968d; color: #fff"><b>--rule-faint</b><span>#91968d</span><i>moved to pass</i></li></ul>
+      <div class="samples">
+        <div class="sample" style="background: #ffffff; color: #588030">
+          <h3 style="color: #588030">A heading in this palette</h3>
+          <p>Body text on --ground. It runs long enough to wrap, so the colour can be judged as a block of reading and not a word.</p>
+          <hr style="border: 0; border-top: 0.2rem solid #588030">
+          
+        </div>
+        <div class="sample" style="background: #262724; color: #a0cb74">
+          <h3 style="color: #ffffff">A heading in this palette</h3>
+          <p>Body text on --ground-dark. It runs long enough to wrap, so the colour can be judged as a block of reading and not a word.</p>
+          <hr style="border: 0; border-top: 0.2rem solid #a0cb74">
+          <a href="#" style="color: #ffffff">A link in the accent</a>
+        </div></div>
+      <details><summary>the 12 duties</summary><ul class="duties"><li class="pass">--accent on --ground: 4.62:1, text owes 4.5:1</li><li class="pass">--accent-on-dark on --ground-dark: 8.07:1, text owes 4.5:1</li><li class="pass">--accent-on-dark on --band: 6.66:1, text owes 4.5:1</li><li class="pass">--ground on --accent: 4.62:1, text owes 4.5:1</li><li class="pass">--band on --ground: 12.39:1, text owes 4.5:1</li><li class="pass">--text on --ground: 16.92:1, text owes 4.5:1</li><li class="pass">--text-on-dark on --ground-dark: 11.13:1, text owes 4.5:1</li><li class="pass">--text-on-dark on --band: 9.18:1, text owes 4.5:1</li><li class="pass">--text-on-dark-strong on --ground-dark: 15.02:1, text owes 4.5:1</li><li class="pass">--rule on --ground: 3.31:1, rule owes 3:1</li><li class="pass">--rule-faint on --ground: 3.02:1, rule owes 3:1</li><li class="pass">--rule-faint on --band: 4.1:1, rule owes 3:1</li></ul></details>
+      <p class="use">See a real page under it: <a href="preview.html?palette=a&amp;page=/">preview.html?palette=a</a>. Choose it: <code>figoya-site palettes --choose a</code></p>
+    </section>
+    <section class="proposal" id="b">
+      <h2>B — Complement <small>the preferred hue, with its opposite for the second accent and the tints</small></h2>
+      <p class="verdict">every contrast duty passes; 2 values moved to pass</p>
+      <ul class="swatches">
+        <li style="background: #588030; color: #fff"><b>--accent</b><span>#588030</span></li>
+        <li style="background: #ae8ad4; color: #111"><b>--accent-on-dark</b><span>#ae8ad4</span><i>moved to pass</i></li>
+        <li style="background: #ffffff; color: #111"><b>--ground</b><span>#ffffff</span></li>
+        <li style="background: #262427; color: #fff"><b>--ground-dark</b><span>#262427</span></li>
+        <li style="background: #333036; color: #fff"><b>--band</b><span>#333036</span></li>
+        <li style="background: #1c1d1b; color: #fff"><b>--text</b><span>#1c1d1b</span></li>
+        <li style="background: #dddfdb; color: #111"><b>--text-on-dark</b><span>#dddfdb</span></li>
+        <li style="background: #ffffff; color: #111"><b>--text-on-dark-strong</b><span>#ffffff</span></li>
+        <li style="background: #8a9084; color: #fff"><b>--rule</b><span>#8a9084</span></li>
+        <li style="background: #8f948a; color: #fff"><b>--rule-faint</b><span>#8f948a</span><i>moved to pass</i></li></ul>
+      <div class="samples">
+        <div class="sample" style="background: #ffffff; color: #588030">
+          <h3 style="color: #588030">A heading in this palette</h3>
+          <p>Body text on --ground. It runs long enough to wrap, so the colour can be judged as a block of reading and not a word.</p>
+          <hr style="border: 0; border-top: 0.2rem solid #588030">
+          
+        </div>
+        <div class="sample" style="background: #262427; color: #ae8ad4">
+          <h3 style="color: #ffffff">A heading in this palette</h3>
+          <p>Body text on --ground-dark. It runs long enough to wrap, so the colour can be judged as a block of reading and not a word.</p>
+          <hr style="border: 0; border-top: 0.2rem solid #ae8ad4">
+          <a href="#" style="color: #ffffff">A link in the accent</a>
+        </div></div>
+      <details><summary>the 12 duties</summary><ul class="duties"><li class="pass">--accent on --ground: 4.62:1, text owes 4.5:1</li><li class="pass">--accent-on-dark on --ground-dark: 5.41:1, text owes 4.5:1</li><li class="pass">--accent-on-dark on --band: 4.57:1, text owes 4.5:1</li><li class="pass">--ground on --accent: 4.62:1, text owes 4.5:1</li><li class="pass">--band on --ground: 12.99:1, text owes 4.5:1</li><li class="pass">--text on --ground: 16.92:1, text owes 4.5:1</li><li class="pass">--text-on-dark on --ground-dark: 11.47:1, text owes 4.5:1</li><li class="pass">--text-on-dark on --band: 9.68:1, text owes 4.5:1</li><li class="pass">--text-on-dark-strong on --ground-dark: 15.4:1, text owes 4.5:1</li><li class="pass">--rule on --ground: 3.28:1, rule owes 3:1</li><li class="pass">--rule-faint on --ground: 3.1:1, rule owes 3:1</li><li class="pass">--rule-faint on --band: 4.19:1, rule owes 3:1</li></ul></details>
+      <p class="use">See a real page under it: <a href="preview.html?palette=b&amp;page=/">preview.html?palette=b</a>. Choose it: <code>figoya-site palettes --choose b</code></p>
+    </section>
+    <section class="proposal" id="c">
+      <h2>C — Neighbour <small>the preferred hue, with the hue beside it for the second accent and the tints</small></h2>
+      <p class="verdict">every contrast duty passes; 1 value moved to pass</p>
+      <ul class="swatches">
+        <li style="background: #588030; color: #fff"><b>--accent</b><span>#588030</span></li>
+        <li style="background: #74cb74; color: #111"><b>--accent-on-dark</b><span>#74cb74</span></li>
+        <li style="background: #ffffff; color: #111"><b>--ground</b><span>#ffffff</span></li>
+        <li style="background: #232823; color: #fff"><b>--ground-dark</b><span>#232823</span></li>
+        <li style="background: #303630; color: #fff"><b>--band</b><span>#303630</span></li>
+        <li style="background: #1c1e1a; color: #fff"><b>--text</b><span>#1c1e1a</span></li>
+        <li style="background: #dddfdb; color: #111"><b>--text-on-dark</b><span>#dddfdb</span></li>
+        <li style="background: #ffffff; color: #111"><b>--text-on-dark-strong</b><span>#ffffff</span></li>
+        <li style="background: #8a9183; color: #fff"><b>--rule</b><span>#8a9183</span></li>
+        <li style="background: #8f9589; color: #fff"><b>--rule-faint</b><span>#8f9589</span><i>moved to pass</i></li></ul>
+      <div class="samples">
+        <div class="sample" style="background: #ffffff; color: #588030">
+          <h3 style="color: #588030">A heading in this palette</h3>
+          <p>Body text on --ground. It runs long enough to wrap, so the colour can be judged as a block of reading and not a word.</p>
+          <hr style="border: 0; border-top: 0.2rem solid #588030">
+          
+        </div>
+        <div class="sample" style="background: #232823; color: #74cb74">
+          <h3 style="color: #ffffff">A heading in this palette</h3>
+          <p>Body text on --ground-dark. It runs long enough to wrap, so the colour can be judged as a block of reading and not a word.</p>
+          <hr style="border: 0; border-top: 0.2rem solid #74cb74">
+          <a href="#" style="color: #ffffff">A link in the accent</a>
+        </div></div>
+      <details><summary>the 12 duties</summary><ul class="duties"><li class="pass">--accent on --ground: 4.62:1, text owes 4.5:1</li><li class="pass">--accent-on-dark on --ground-dark: 7.53:1, text owes 4.5:1</li><li class="pass">--accent-on-dark on --band: 6.21:1, text owes 4.5:1</li><li class="pass">--ground on --accent: 4.62:1, text owes 4.5:1</li><li class="pass">--band on --ground: 12.38:1, text owes 4.5:1</li><li class="pass">--text on --ground: 16.8:1, text owes 4.5:1</li><li class="pass">--text-on-dark on --ground-dark: 11.19:1, text owes 4.5:1</li><li class="pass">--text-on-dark on --band: 9.23:1, text owes 4.5:1</li><li class="pass">--text-on-dark-strong on --ground-dark: 15.01:1, text owes 4.5:1</li><li class="pass">--rule on --ground: 3.25:1, rule owes 3:1</li><li class="pass">--rule-faint on --ground: 3.08:1, rule owes 3:1</li><li class="pass">--rule-faint on --band: 4.03:1, rule owes 3:1</li></ul></details>
+      <p class="use">See a real page under it: <a href="preview.html?palette=c&amp;page=/">preview.html?palette=c</a>. Choose it: <code>figoya-site palettes --choose c</code></p>
+    </section>
+    <section class="proposal" id="d">
+      <h2>D — Muted <small>one hue, its saturation reduced; the quiet version</small></h2>
+      <p class="verdict">every contrast duty passes; 1 value moved to pass</p>
+      <ul class="swatches">
+        <li style="background: #587040; color: #fff"><b>--accent</b><span>#587040</span></li>
+        <li style="background: #a0ba85; color: #111"><b>--accent-on-dark</b><span>#a0ba85</span></li>
+        <li style="background: #ffffff; color: #111"><b>--ground</b><span>#ffffff</span></li>
+        <li style="background: #262724; color: #fff"><b>--ground-dark</b><span>#262724</span></li>
+        <li style="background: #333531; color: #fff"><b>--band</b><span>#333531</span></li>
+        <li style="background: #1c1d1b; color: #fff"><b>--text</b><span>#1c1d1b</span></li>
+        <li style="background: #dddedc; color: #111"><b>--text-on-dark</b><span>#dddedc</span></li>
+        <li style="background: #ffffff; color: #111"><b>--text-on-dark-strong</b><span>#ffffff</span></li>
+        <li style="background: #8a8e86; color: #fff"><b>--rule</b><span>#8a8e86</span></li>
+        <li style="background: #91958e; color: #fff"><b>--rule-faint</b><span>#91958e</span><i>moved to pass</i></li></ul>
+      <div class="samples">
+        <div class="sample" style="background: #ffffff; color: #587040">
+          <h3 style="color: #587040">A heading in this palette</h3>
+          <p>Body text on --ground. It runs long enough to wrap, so the colour can be judged as a block of reading and not a word.</p>
+          <hr style="border: 0; border-top: 0.2rem solid #587040">
+          
+        </div>
+        <div class="sample" style="background: #262724; color: #a0ba85">
+          <h3 style="color: #ffffff">A heading in this palette</h3>
+          <p>Body text on --ground-dark. It runs long enough to wrap, so the colour can be judged as a block of reading and not a word.</p>
+          <hr style="border: 0; border-top: 0.2rem solid #a0ba85">
+          <a href="#" style="color: #ffffff">A link in the accent</a>
+        </div></div>
+      <details><summary>the 12 duties</summary><ul class="duties"><li class="pass">--accent on --ground: 5.52:1, text owes 4.5:1</li><li class="pass">--accent-on-dark on --ground-dark: 7.05:1, text owes 4.5:1</li><li class="pass">--accent-on-dark on --band: 5.82:1, text owes 4.5:1</li><li class="pass">--ground on --accent: 5.52:1, text owes 4.5:1</li><li class="pass">--band on --ground: 12.39:1, text owes 4.5:1</li><li class="pass">--text on --ground: 16.92:1, text owes 4.5:1</li><li class="pass">--text-on-dark on --ground-dark: 11.13:1, text owes 4.5:1</li><li class="pass">--text-on-dark on --band: 9.18:1, text owes 4.5:1</li><li class="pass">--text-on-dark-strong on --ground-dark: 15.02:1, text owes 4.5:1</li><li class="pass">--rule on --ground: 3.34:1, rule owes 3:1</li><li class="pass">--rule-faint on --ground: 3.05:1, rule owes 3:1</li><li class="pass">--rule-faint on --band: 4.07:1, rule owes 3:1</li></ul></details>
+      <p class="use">See a real page under it: <a href="preview.html?palette=d&amp;page=/">preview.html?palette=d</a>. Choose it: <code>figoya-site palettes --choose d</code></p>
+    </section>
+</body>
+</html>

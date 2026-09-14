@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Palette preview</title>
+<style>
+  html, body { margin: 0; height: 100%; font: 14px/1.4 system-ui, sans-serif; }
+  body { display: flex; flex-direction: column; }
+  form { display: flex; gap: 1em; align-items: center; padding: 0.6em 1em; background: #111; color: #fff; }
+  form a { color: #fff; margin-right: 0.5em; } form a.on { font-weight: bold; text-decoration: none; border-bottom: 2px solid #fff; }
+  input { font: inherit; padding: 0.2em 0.4em; width: 16em; }
+  iframe { flex: 1; border: 0; width: 100%; }
+  .note { margin-left: auto; opacity: 0.7; }
+</style>
+</head>
+<body>
+<form>
+  <span>Palette:</span>
+  <a href="?palette=a" data-palette="a">A</a><a href="?palette=b" data-palette="b">B</a><a href="?palette=c" data-palette="c">C</a><a href="?palette=d" data-palette="d">D</a>
+  <a href="?palette=" data-palette="">as is</a>
+  <label>Page <input name="page" value="/"></label>
+  <button>Go</button>
+  <span class="note">Preview only: the palette is injected into the page below; nothing on the site changes.</span>
+</form>
+<iframe id="frame" title="the page under the chosen palette"></iframe>
+<script>
+  const q = new URLSearchParams(location.search);
+  const palette = q.get("palette") || "";
+  const page = q.get("page") || "/";
+  document.querySelector("input[name=page]").value = page;
+  for (const a of document.querySelectorAll("a[data-palette]")) {
+    a.href = "?palette=" + a.dataset.palette + "&page=" + encodeURIComponent(page);
+    if (a.dataset.palette === palette) a.classList.add("on");
+  }
+  document.querySelector("form").addEventListener("submit", (e) => {
+    e.preventDefault();
+    location.search = "?palette=" + palette + "&page=" + encodeURIComponent(document.querySelector("input[name=page]").value);
+  });
+  const frame = document.getElementById("frame");
+  frame.src = page;
+  frame.addEventListener("load", async () => {
+    if (!palette) return;
+    const css = await (await fetch("palettes/" + palette + ".css")).text();
+    const doc = frame.contentDocument;
+    const style = doc.createElement("style");
+    style.textContent = css;
+    doc.head.appendChild(style);
+    // Follow links inside the frame under the same palette.
+    doc.addEventListener("click", (ev) => {
+      const a = ev.target.closest && ev.target.closest("a[href]");
+      if (!a || a.target === "_blank" || /^(https?:)?\/\//.test(a.getAttribute("href"))) return;
+      ev.preventDefault();
+      location.search = "?palette=" + palette + "&page=" + encodeURIComponent(new URL(a.href).pathname);
+    });
+  });
+</script>
+</body>
+</html>

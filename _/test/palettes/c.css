@@ -1,0 +1,12 @@
+:root {
+  --accent: #588030;              /* headings, links, buttons, rules on light ground */
+  --accent-on-dark: #74cb74;      /* the accent's lighter cut for text and focus rings on dark ground */
+  --ground: #ffffff;              /* the page */
+  --ground-dark: #232823;         /* hero, header, footer, dark bands */
+  --band: #303630;                /* the lighter dark band (family D) */
+  --text: #1c1e1a;                /* body text on light ground */
+  --text-on-dark: #dddfdb;        /* body text on dark ground */
+  --text-on-dark-strong: #ffffff; /* hero text and links on dark ground */
+  --rule: #8a9183;                /* hairlines, form borders, focus rings on light ground */
+  --rule-faint: #8f9589;          /* hairlines that should recede */
+}
