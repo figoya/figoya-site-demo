@@ -150,8 +150,8 @@
     position: relative;
     z-index: 1;
     background: var(--ground-dark);
-    padding: 4rem;
-    margin: 0 -4rem 0 -4rem;
+    padding: 4rem 2rem;
+    margin: 0 -2rem 0 -2rem;
     color: var(--ground);
   }
   .s.how > div:nth-child(1),
@@ -269,13 +269,23 @@
   /******/
 }
 
+@media only screen and (min-width: 600px) {
+  .s.how,
+  .s.how-we-help,
+  .s.fix,
+  .s.teach {
+    padding: 4rem;
+    margin: 0 -4rem 0 -4rem;
+  }
+}
+
 @media only screen and (min-width: 1040px) {
   .s.how,
   .s.how-we-help,
   .s.fix,
   .s.teach {
-    padding: 10rem 46rem;
-    margin: 0 -46rem 0 -46rem;
+    padding: 10rem calc(50vw - 50%);
+    margin: 0 calc(50% - 50vw);
     background:var(--ground-dark);
   }
 }
@@ -410,8 +420,8 @@
     position: relative;
     z-index: 1;
     background: var(--band);
-    padding: 4rem;
-    margin: 0 -4rem 0 -4rem;
+    padding: 4rem 2rem;
+    margin: 0 -2rem 0 -2rem;
     color: var(--text-on-dark);
   }
 
@@ -495,10 +505,17 @@
   }
 }
 
+@media only screen and (min-width: 600px) {
+  .s.transparency {
+    padding: 4rem;
+    margin: 0 -4rem 0 -4rem;
+  }
+}
+
 @media only screen and (min-width: 1040px) {
   .s.transparency {
-    padding: 10rem 46rem;
-    margin: 0 -46rem 0 -46rem;
+    padding: 10rem calc(50vw - 50%);
+    margin: 0 calc(50% - 50vw);
   }
   .c.transparency.graphic img {
     width: 90%;

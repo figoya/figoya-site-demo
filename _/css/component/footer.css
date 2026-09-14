@@ -21,8 +21,8 @@
 }
 @media only screen and (min-width: 1040px) {
   footer {
-    padding: 4rem 46rem;
-    margin: 0 -46rem;
+    padding: 4rem calc(50vw - 50%);
+    margin: 0 calc(50% - 50vw);
     flex-wrap: nowrap;
     justify-content: space-between;
   }

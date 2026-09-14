@@ -3,8 +3,8 @@
     position: relative;
     z-index: 1;
     background: var(--ground-dark);
-    padding: 4rem;
-    margin: 0 -4rem 0 -4rem;
+    padding: 4rem 2rem;
+    margin: 0 -2rem 0 -2rem;
     color: var(--ground);
   }
   .s.esg > div:nth-child(1) {
@@ -63,6 +63,10 @@
 }
 
 @media only screen and (min-width: 600px) {
+  .s.esg {
+    padding: 4rem;
+    margin: 0 -4rem 0 -4rem;
+  }
   .c.esg.quote q {
     padding: 4rem 8rem 4rem 10rem;
   }
@@ -90,8 +94,8 @@
 
 @media only screen and (min-width: 1040px) {
   .s.esg {
-    padding: 10rem 46rem;
-    margin: 0 -46rem 0 -46rem;
+    padding: 10rem calc(50vw - 50%);
+    margin: 0 calc(50% - 50vw);
     background: var(--ground-dark);
   }
   .c.esg.graphic img {
