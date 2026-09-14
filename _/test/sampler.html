@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sampler — Figoya - Low CO2 Digital</title>
+    <link rel="stylesheet" href="/_/css/site.css">
+    <link rel="stylesheet" href="/_/css/accessibility.css">
+    <link rel="stylesheet" href="/_/css/section/shared.css">
+    <style>
+      .sampler-meta { font: 14px/1.5 system-ui, sans-serif; color: #111; background: #f4f4f4; border-top: 4px solid #111; padding: 1.5em 2em; }
+      .sampler-meta h2 { margin: 0 0 .5em; font-size: 1.4em; }
+      .sampler-meta code { background: #e4e4e4; padding: 0 .3em; }
+      .sampler-meta dl { display: flex; flex-wrap: wrap; gap: .5em 2em; margin: 0 0 .75em; }
+      .sampler-meta dl div { display: flex; gap: .5em; }
+      .sampler-meta dt { font-weight: bold; }
+      .sampler-meta dd { margin: 0; }
+      .sampler-meta .intent { margin: 0 0 .25em; font-style: italic; }
+      .sampler-meta .borrowed { margin: 0; color: #555; }
+      .sampler-head { font: 14px/1.5 system-ui, sans-serif; padding: 1.5em 2em; background: #111; color: #fff; }
+      .sampler-head h1 { margin: 0; font-size: 1.6em; }
+      .sampler-head p { margin: .5em 0 0; }
+      /* The hero row is hidden, so the page's hero background has nothing to sit behind. */
+      body.sampler, .page.sampler main { background-image: none; }
+    </style>
+  </head>
+  <body class="page sampler">
+    <div>
+      <header class="sampler-head">
+        <h1>Sampler: Figoya - Low CO2 Digital</h1>
+        <p>Every family in source/brief.md, rendered once with placeholder copy under the site's own stylesheets. Judge the look here; change it in the CSS or the brief.</p>
+      </header>
+      <main>
+        <div hidden></div>
+        <div>
+          <div class="sampler-meta">
+            <h2>Section style A <code>{a}</code></h2>
+            <dl>
+              <div><dt>ground</dt><dd>light (the page)</dd></div>
+              <div><dt>bleed</dt><dd>no</dd></div>
+              <div><dt>graphic</dt><dd>right, informative (an infographic that carries meaning)</dd></div>
+              <div><dt>heading</dt><dd>accent-coloured h2 above the text column; the lead paragraph sits between two accent rules</dd></div>
+            </dl>
+            <p class="intent">The plain explanatory section on a light page: words on the left, a diagram on the right.</p>
+            <p class="borrowed">rendered as <code>.s.build</code></p>
+          </div>
+          <section class="s build">
+            <div>
+              <div class="c build heading">
+                <h2>Section style A</h2>
+              </div>
+            </div>
+            <div>
+              <div class="c build text">
+                <p><b>This is the lead paragraph of a section in the Section style A family.</b> It says in one bold sentence what the section is about, and then goes on in plain words.</p>
+                <p>A second paragraph shows the body text: its size, its measure and its colour on this ground. It runs long enough to wrap onto a second line at most widths, so the line height can be judged too.</p>
+                <p>A third paragraph is short.</p>
+              </div>
+              <div class="c build graphic">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22300%22%20viewBox%3D%220%200%20400%20300%22%3E%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%23d9d9d9%22%2F%3E%3Cpath%20d%3D%22M0%200L400%20300M400%200L0%20300%22%20stroke%3D%22%23bfbfbf%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22sans-serif%22%20font-size%3D%2238%22%20fill%3D%22%23666%22%3ESection%20style%20A%3C%2Ftext%3E%3C%2Fsvg%3E" loading="lazy" alt="Placeholder graphic for the Section style A family">
+              </div>
+            </div>
+          </section>
+          <div class="sampler-meta">
+            <h2>Section style B <code>{b}</code></h2>
+            <dl>
+              <div><dt>ground</dt><dd>dark, --ground-dark</dd></div>
+              <div><dt>bleed</dt><dd>yes, to the screen edge</dd></div>
+              <div><dt>graphic</dt><dd>left, informative</dd></div>
+              <div><dt>heading</dt><dd>light h2 above the text column; the lead paragraph sits between two accent rules</dd></div>
+            </dl>
+            <p class="intent">The same conversation as A, but on a dark band that stretches across the screen, with the diagram on the left.</p>
+            <p class="borrowed">rendered as <code>.s.fix</code></p>
+          </div>
+          <section class="s fix">
+            <div>
+              <div class="c fix heading">
+                <h2>Section style B</h2>
+              </div>
+            </div>
+            <div>
+              <div class="c fix text">
+                <p><b>This is the lead paragraph of a section in the Section style B family.</b> It says in one bold sentence what the section is about, and then goes on in plain words.</p>
+                <p>A second paragraph shows the body text: its size, its measure and its colour on this ground. It runs long enough to wrap onto a second line at most widths, so the line height can be judged too.</p>
+                <p>A third paragraph is short.</p>
+              </div>
+              <div class="c fix graphic">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22300%22%20viewBox%3D%220%200%20400%20300%22%3E%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%23d9d9d9%22%2F%3E%3Cpath%20d%3D%22M0%200L400%20300M400%200L0%20300%22%20stroke%3D%22%23bfbfbf%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22sans-serif%22%20font-size%3D%2238%22%20fill%3D%22%23666%22%3ESection%20style%20B%3C%2Ftext%3E%3C%2Fsvg%3E" loading="lazy" alt="Placeholder graphic for the Section style B family">
+              </div>
+            </div>
+          </section>
+          <div class="sampler-meta">
+            <h2>Section style C <code>{c}</code></h2>
+            <dl>
+              <div><dt>ground</dt><dd>light (the page)</dd></div>
+              <div><dt>bleed</dt><dd>no</dd></div>
+              <div><dt>graphic</dt><dd>right, decorative (smaller; illustrates rather than explains)</dd></div>
+              <div><dt>heading</dt><dd>accent-coloured h2 above the text column; the lead paragraph sits between two accent rules</dd></div>
+            </dl>
+            <p class="intent">Style A with a decorative picture instead of a diagram, so the words carry the section.</p>
+            <p class="borrowed">rendered as <code>.s.agile</code></p>
+          </div>
+          <section class="s agile">
+            <div>
+              <div class="c agile heading">
+                <h2>Section style C</h2>
+              </div>
+            </div>
+            <div>
+              <div class="c agile text">
+                <p><b>This is the lead paragraph of a section in the Section style C family.</b> It says in one bold sentence what the section is about, and then goes on in plain words.</p>
+                <p>A second paragraph shows the body text: its size, its measure and its colour on this ground. It runs long enough to wrap onto a second line at most widths, so the line height can be judged too.</p>
+                <p>A third paragraph is short.</p>
+              </div>
+              <div class="c agile graphic">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22300%22%20viewBox%3D%220%200%20400%20300%22%3E%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%23d9d9d9%22%2F%3E%3Cpath%20d%3D%22M0%200L400%20300M400%200L0%20300%22%20stroke%3D%22%23bfbfbf%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22sans-serif%22%20font-size%3D%2238%22%20fill%3D%22%23666%22%3ESection%20style%20C%3C%2Ftext%3E%3C%2Fsvg%3E" loading="lazy" alt="Placeholder graphic for the Section style C family">
+              </div>
+            </div>
+          </section>
+          <div class="sampler-meta">
+            <h2>Section style D <code>{d}</code></h2>
+            <dl>
+              <div><dt>ground</dt><dd>dark, --band</dd></div>
+              <div><dt>bleed</dt><dd>yes, to the screen edge</dd></div>
+              <div><dt>graphic</dt><dd>left, decorative (smaller)</dd></div>
+              <div><dt>heading</dt><dd>light h2 above the text column; the lead paragraph sits between two accent rules</dd></div>
+            </dl>
+            <p class="intent">Style B with a decorative picture, on the lighter dark band, for a change of rhythm between dark sections.</p>
+            <p class="borrowed">rendered as <code>.s.transparency</code></p>
+          </div>
+          <section class="s transparency">
+            <div>
+              <div class="c transparency heading">
+                <h2>Section style D</h2>
+              </div>
+            </div>
+            <div>
+              <div class="c transparency text">
+                <p><b>This is the lead paragraph of a section in the Section style D family.</b> It says in one bold sentence what the section is about, and then goes on in plain words.</p>
+                <p>A second paragraph shows the body text: its size, its measure and its colour on this ground. It runs long enough to wrap onto a second line at most widths, so the line height can be judged too.</p>
+                <p>A third paragraph is short.</p>
+              </div>
+              <div class="c transparency graphic">
+                <img src="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%22400%22%20height%3D%22300%22%20viewBox%3D%220%200%20400%20300%22%3E%3Crect%20width%3D%22400%22%20height%3D%22300%22%20fill%3D%22%23d9d9d9%22%2F%3E%3Cpath%20d%3D%22M0%200L400%20300M400%200L0%20300%22%20stroke%3D%22%23bfbfbf%22%20stroke-width%3D%222%22%2F%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2250%25%22%20dominant-baseline%3D%22middle%22%20text-anchor%3D%22middle%22%20font-family%3D%22sans-serif%22%20font-size%3D%2238%22%20fill%3D%22%23666%22%3ESection%20style%20D%3C%2Ftext%3E%3C%2Fsvg%3E" loading="lazy" alt="Placeholder graphic for the Section style D family">
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>

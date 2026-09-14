@@ -406,7 +406,6 @@
 
 
 @media only screen  {
-  .s.by-post,
   .s.transparency {  
     position: relative;
     z-index: 1;
@@ -416,23 +415,19 @@
     color: var(--text-on-dark);
   }
 
-  .s.by-post > div:nth-child(1),
   .s.transparency > div:nth-child(1){
     margin-bottom: 3rem;
   }
 
-  .c.by-post.heading h2,
   .c.transparency.heading h2{
     color: var(--accent);
   }
 
-  .c.by-post.text p,
   .c.transparency.text p  {
     font-size: 2rem;
     margin-top: 0;
   }
 
-  .c.by-post.text.one p:first-child,
   .c.transparency.text.one p:first-child {
     font-weight: normal;
     color:var(--accent);
@@ -443,17 +438,14 @@
     line-height:3.4rem;
   }
 
-  .c.by-post.actions,
   .c.transparency.actions {
     margin-top: 4rem;
   }
 
-  .c.by-post.graphic,
   .c.transparency.graphic {
     padding-top: 5rem;
   }
 
-  .c.by-post.graphic img,
   .c.transparency.graphic img {
     transform: rotate(18deg);
     opacity: 0.1;
@@ -463,7 +455,6 @@
     margin: auto;
   }
 
-  .c.by-post.graphic figcaption,
   .c.transparency.graphic figcaption {
     text-align: center;
     text-transform: uppercase;
@@ -473,7 +464,6 @@
 }
 @media only screen and (min-width: 400px) {
 
-  .c.by-post.graphic img,
   .c.transparency.graphic img  {
     width: 50%;
   }
@@ -482,41 +472,34 @@
 
 @media only screen and (min-width: 800px) {
   
-  .s.by-post > div,
   .s.transparency > div{
     display: flex;
     gap: 5rem;
     /* flex-direction: row-reverse; */
   }
 
-  .s.by-post > div > div,
   .s.transparency > div > div{
     flex-basis: 50%;
   }
 
-  .c.by-post.graphic,
   .c.transparency.graphic {
     padding-top: 0;
   }
 
-  .c.by-post.graphic img,
   .c.transparency.graphic img {
     width: 70%;
   }
 
-  .c.by-post.graphic figcaption,
   .c.transparency.graphic figcaption {
     padding: 0 4rem;
   }
 }
 
 @media only screen and (min-width: 1040px) {
-  .s.by-post,
   .s.transparency {
     padding: 10rem 46rem;
     margin: 0 -46rem 0 -46rem;
   }
-  .c.by-post.graphic img,
   .c.transparency.graphic img {
     width: 90%;
     position: relative;
