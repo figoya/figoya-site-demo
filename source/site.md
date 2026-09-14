@@ -6,6 +6,7 @@ Site-wide choices, then the words in the header and footer. Settings are one
 typography: plain
 logo: /_/img/figoya-logo-18.svg
 logo-alt: Figoya Logo
+domain: green-software.figoya.com
 
 ## Navigation
 
