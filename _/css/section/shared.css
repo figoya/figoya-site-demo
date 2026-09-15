@@ -430,7 +430,7 @@
   }
 
   .c.transparency.heading h2{
-    color: var(--accent);
+    color: var(--accent-on-dark);
   }
 
   .c.transparency.text p  {
@@ -440,10 +440,10 @@
 
   .c.transparency.text.one p:first-child {
     font-weight: normal;
-    color:var(--accent);
+    color:var(--accent-on-dark);
     font-size: 2.5rem;
-    border-top:solid 0.3rem var(--accent);
-    border-bottom:solid 0.3rem var(--accent);
+    border-top:solid 0.3rem var(--accent-on-dark);
+    border-bottom:solid 0.3rem var(--accent-on-dark);
     padding:1.8rem 0rem 1.8rem 0rem;
     line-height:3.4rem;
   }

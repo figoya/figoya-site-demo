@@ -29,3 +29,8 @@ family: "Arial", "Helvetica", sans-serif
 root: 0.625em
 body: 1.8rem
 heading: 2.5rem
+
+## Weight
+
+page: 500kB
+scripts: 30kB
